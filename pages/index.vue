@@ -37,9 +37,10 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
   width: 60vw;
 }
-
+/* Comment */
 .cta {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/assets/images/image_marketing-agency-banner-copy.webp");
   height: 100vh;
