@@ -32,6 +32,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxt/image',
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -40,5 +42,15 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  // Google Fonts
+  googleFonts: {
+    families: {
+      'Noto Sans': true,
+      'Montserrat': {
+        wght: [700, 800]
+      }
+    }
   }
 }
