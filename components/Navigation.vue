@@ -13,7 +13,7 @@
         </ul>
       </div>
       <div>
-        <p class="con-btn"><NuxtLink :to="{ path: '/contact' }">Request Consultation</NuxtLink></p>
+        <NuxtLink :to="{ path: '/contact' }" class="btn-lin"><p class="con-btn">Request Consultation</p></NuxtLink>
       </div>
     </nav>
   </header>
@@ -50,15 +50,14 @@ nav {
   padding: 15px 0px;
 }
 
+.btn-lin {
+  text-decoration: none;
+}
+
 .menu-li {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-}
-
-.upp {
-  margin: 0px 20px;
-  font-size: 14px; 
 }
 
 .con-btn {
@@ -73,6 +72,16 @@ nav {
 .con-btn a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.upp a {
+  margin: 0px 20px;
+  font-size: 14px;
+  transition: 500ms;
+}
+
+.upp a:hover {
+  color: #E72335;
 }
 
 </style>

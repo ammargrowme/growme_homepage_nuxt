@@ -3,15 +3,12 @@
   <Navigation/>
   <main>
     <div class="cta">
-        <div class="cta-tex">
-          <h2>Grow</h2>
-          <p>Your Sales</p>
-        </div>
+      <Typed/>
     </div>
     <div class="success-hed">
       <section class="success-sec">
         <div class="block-tex">
-          <h3>Growing Your Business Is Why We Exist</h3>
+          <h3 class="success-h3">Growing Your Business Is Why We Exist</h3>
           <p>Our Calgary marketing agency is proof — there's a better way to grow.</p>
           <NuxtLink :to="{ path: '/contact' }"><p>Talk To The Experts</p></NuxtLink>
           <p>Featured In:</p>
@@ -43,6 +40,21 @@ export default {
 
 <style>
 
+.success-hed {
+  background-image: url("/assets/images/topography_grey_reverse.webp");
+  background-position: top center;
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.success-h3 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 44px;
+  width: 350px;
+  line-height: 1;
+  font-weight: 700;
+}
+
 .feat-sec {
   display: flex;
   justify-content: space-around;
@@ -70,26 +82,4 @@ body {
   margin: 0px;
   padding: 0px;
 }
-
-.cta-tex {
-  font-family: 'Montserrat', sans-serif;
-  margin-left: 2rem;
-}
-
-.cta-tex p {
-  margin: 0px;
-  color: #FFFFFF;
-  font-size: 90px;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.cta-tex h2 {
-  margin: 0px;
-  color: #e92226;
-  font-size: 200px;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
 </style>
