@@ -47,7 +47,7 @@ nav {
   z-index: 1;
   top: 0;
   width: 80%;
-  padding: 15px 0px;
+  padding: 10px 0px;
 }
 
 .btn-lin {
@@ -62,7 +62,7 @@ nav {
 
 .con-btn {
   background-color: #E72335;
-  padding: 8px 20px;
+  padding: 6px 20px;
   border-radius: 20px;
   font-size: 14px;
   text-decoration: none;

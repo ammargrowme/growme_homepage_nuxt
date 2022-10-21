@@ -3,7 +3,7 @@
     <h2>Grow</h2>
     <div class="inline-tex">
       <p>Your&nbsp;</p>
-      <vue-typed-js :strings="['Brand', 'Sales']" :typeSpeed="100" :loop="true" :backSpeed="60" :backDelay="1200"><span class="typing"></span></vue-typed-js>
+      <vue-typed-js :strings="['Brand', 'Sales']" :typeSpeed="80" :loop="true" :backSpeed="60" :backDelay="1200"><span class="typing"></span></vue-typed-js>
     </div>
   </div>
 </template>
