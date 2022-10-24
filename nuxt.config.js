@@ -50,10 +50,13 @@ export default {
   googleFonts: {
     families: {
       'Noto Sans': {
-        wght: [400, 700]
+        wght: [100, 400, 700]
       },
       'Montserrat': {
         wght: [700, 800]
+      },
+      'Open Sans': {
+        wght: [300, 600]
       },
     }
   }

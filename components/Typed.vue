@@ -26,6 +26,7 @@ export default {
   font-size: 90px;
   text-transform: uppercase;
   font-weight: 700;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 .cta-tex {
