@@ -13,7 +13,7 @@
         </ul>
       </div>
       <div>
-        <NuxtLink :to="{ path: '/contact' }" class="btn-lin"><p class="con-btn">Request Consultation</p></NuxtLink>
+        <NuxtLink :to="{ path: '/contact-test' }" class="btn-lin"><p class="con-btn">Request Consultation</p></NuxtLink>
       </div>
     </nav>
   </header>
