@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Calgary Marketing Agency, Digital Marketing Company | GrowME',
+    title: 'Calgary Marketing Agency, Digital Marketing Company | GrowME Marketing',
     htmlAttrs: {
       lang: 'en'
     },
