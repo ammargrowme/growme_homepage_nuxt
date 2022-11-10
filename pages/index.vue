@@ -33,6 +33,29 @@
         </div>
       </section>
     </div>
+    <div>
+      <section>
+        <h2 class="to-up help-h2">How Can We Help?</h2>
+        <div>
+          <div>
+            <nuxt-img src="assets/images/image_lead-generation-1.webp"/>
+            <p>Lead Generation &amp; Marketing</p>
+          </div>
+          <div>
+            <nuxt-img src="assets/images/image_search-engine-optimization.webp"/>
+            <p>Search Engine Optimization</p>
+          </div>
+          <div>
+            <nuxt-img src="assets/images/image_branding-identity-1.webp"/>
+            <p>Branding &amp; Strategy</p>
+          </div>
+          <div>
+            <nuxt-img src="assets/images/image_web-design-1.webp"/>
+            <p>Website Design &amp; Creative</p>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 </div>
 </template>
@@ -44,6 +67,19 @@ export default {
 </script>
 
 <style>
+.help-h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 6.5em;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #919191;
+  text-align: center;
+}
+
+.to-up {
+  text-transform: uppercase;
+}
+
 .feature-text {
   color: #1a2444;
   font-family: 'Noto Sans', sans-serif;
