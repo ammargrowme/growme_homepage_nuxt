@@ -34,22 +34,22 @@
       </section>
     </div>
     <div>
-      <section>
+      <section class="main-help">
         <h2 class="to-up help-h2">How Can We Help?</h2>
-        <div>
-          <div>
+        <div class="help-flex">
+          <div class="help-flex-child">
             <nuxt-img src="assets/images/image_lead-generation-1.webp"/>
             <p>Lead Generation &amp; Marketing</p>
           </div>
-          <div>
+          <div class="help-flex-child">
             <nuxt-img src="assets/images/image_search-engine-optimization.webp"/>
             <p>Search Engine Optimization</p>
           </div>
-          <div>
+          <div class="help-flex-child">
             <nuxt-img src="assets/images/image_branding-identity-1.webp"/>
             <p>Branding &amp; Strategy</p>
           </div>
-          <div>
+          <div class="help-flex-child">
             <nuxt-img src="assets/images/image_web-design-1.webp"/>
             <p>Website Design &amp; Creative</p>
           </div>
@@ -67,6 +67,48 @@ export default {
 </script>
 
 <style>
+.main-help {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.help-flex-child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.help-flex-child img {
+  max-width: 290px;
+}
+
+.help-flex-child p {
+  width: 260px;
+  margin-top: 0;
+  line-height: 1.1em;
+}
+
+.help-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  background-color: #e1e1e1;
+  margin-top: 1rem;
+  height: 140px;
+  padding-bottom: 9rem;
+}
+
+.help-flex p {
+  color: #232323;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
 .help-h2 {
   font-family: "Noto Sans", sans-serif;
   font-size: 6.5em;
