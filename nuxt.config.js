@@ -58,6 +58,9 @@ export default {
       'Open Sans': {
         wght: [300, 600]
       },
+      'Kanit': {
+        wght: [300]
+      },
     }
   }
 }
