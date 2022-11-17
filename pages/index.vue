@@ -33,12 +33,12 @@
         </div>
       </section>
     </div>
-    <div>
+    <section>
       <Help/>
-    </div>
-    <div>
+    </section>
+    <section>
       <Clients/>
-    </div>
+    </section>
   </main>
 </div>
 </template>
