@@ -73,7 +73,7 @@ export default {
   transition: opacity 0.7s ease;
 }
 
-.fade-enter-from,
+.fade-enter,
 .fade-leave-to {
   opacity: 0;
 }
