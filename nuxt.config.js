@@ -36,7 +36,15 @@ export default {
     '@nuxt/image',
     '@nuxtjs/google-fonts',
     '@nuxtjs/style-resources',
+    '@nuxtjs/fontawesome'
   ],
+
+  fontawesome: {
+    component: 'fa',
+    icons: {
+      solid: ['faBuildingColumns', 'faLocationDot', 'faGear', 'faMoneyBill1', 'faGraduationCap', 'faLightbulb']
+    }
+  },
   
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -56,7 +64,7 @@ export default {
         wght: [700, 800]
       },
       'Open Sans': {
-        wght: [300, 600]
+        wght: [300, 400, 600]
       },
       'Kanit': {
         wght: [300]
