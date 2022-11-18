@@ -42,9 +42,10 @@
     <section>
       <div class="client-suc-container">
         <div v-for="client in clients" :key="client.id" :class="client.class">
+          <div :class="client.classImg"></div>
           <NuxtLink class="con-btn-sm" :to="`${client.id}`"><p>See Case Study</p></NuxtLink>
           <div class="client-suc-text">
-            <fa :icon="client.logo" />
+            <fa :icon="client.logo"/>
             <p class="benefit-tex">{{ client.benefit }}</p>
             <p class="border-up">{{ client.name }} | {{ client.industry }}</p>
           </div>
@@ -60,12 +61,12 @@ export default {
   data() {
   return {
     clients : [
-      { id: 1, logo: 'arrow-pointer', name: 'Edwards Injury Law', industry: 'LEGAL', benefit: '50% of Sales Now Generated From Website Traffic', class: 'client-1 client-card' },
-      { id: 2, logo: 'medal', name: 'Ultimate Renovations', industry: 'HOME RENOVATIONS', benefit: '#1 Position on Google in Less Than 12 Months!', class: 'client-2 client-card' },
-      { id: 3, logo: 'earth-americas', name: 'Pick-n-Pull', industry: 'AUTOMOTIVE', benefit: 'Canada-Wide Growth', class: 'client-3 client-card' },
-      { id: 4, logo: 'paintbrush', name: 'Toronto Family Hearing', industry: 'HEALTH', benefit: 'Enhanced Brand Positioning & Messaging', class: 'client-4 client-card' },
-      { id: 5, logo: 'store', name: 'Unison', industry: 'REAL ESTATE', benefit: '300% Increase in Leads from Online Inquiries', class: 'client-5 client-card' },
-      { id: 6, logo: 'arrow-turn-up', name: 'Prime Hair Clinic', industry: 'HEALTH', benefit: 'Unprecedented Growth Due to Online Visibility', class: 'client-6 client-card' },
+      { id: 1, logo: 'arrow-pointer', name: 'Edwards Injury Law', industry: 'LEGAL', benefit: '50% of Sales Now Generated From Website Traffic', class: 'client-1 client-card', classImg: 'img-box1' },
+      { id: 2, logo: 'medal', name: 'Ultimate Renovations', industry: 'HOME RENOVATIONS', benefit: '#1 Position on Google in Less Than 12 Months!', class: 'client-2 client-card', classImg: 'img-box2' },
+      { id: 3, logo: 'earth-americas', name: 'Pick-n-Pull', industry: 'AUTOMOTIVE', benefit: 'Canada-Wide Growth', class: 'client-3 client-card', classImg: 'img-box3' },
+      { id: 4, logo: 'paintbrush', name: 'Toronto Family Hearing', industry: 'HEALTH', benefit: 'Enhanced Brand Positioning & Messaging', class: 'client-4 client-card', classImg: 'img-box4' },
+      { id: 5, logo: 'store', name: 'Unison', industry: 'REAL ESTATE', benefit: '300% Increase in Leads from Online Inquiries', class: 'client-5 client-card', classImg: 'img-box5' },
+      { id: 6, logo: 'arrow-turn-up', name: 'Prime Hair Clinic', industry: 'HEALTH', benefit: 'Unprecedented Growth Due to Online Visibility', class: 'client-6 client-card', classImg: 'img-box6' },
     ]
     }
   }
@@ -74,46 +75,101 @@ export default {
 
 <style>
 
+.client-3:hover .img-box3 {
+  background-image: url("/assets/client-img/logo-pick-n-pull-black.webp");
+}
+
+.client-3:hover {
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/client-img/case-study-pick-n-pull-bw.webp");
+}
+
+.img-box-3 {
+  width: 200px;
+  height: 150px;
+  background-image: url("/assets/client-img/logo-pick-n-pull-white.webp");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 400ms;
+}
+
+.img-box1 {
+  width: 200px;
+  height: 150px;
+  background-image: url("/assets/client-img/edwards-injury-law_logo-01.webp");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 400ms;
+}
+
+.client-1:hover .img-box1 {
+  background-image: url("/assets/client-img/edwards-injury-law_logo-02.webp");
+}
+
+.client-1:hover {
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/client-img/image_law.webp");
+}
+
+.img-box2 {
+  width: 200px;
+  height: 150px;
+  background-image: url("/assets/client-img/ultimate-renovations-logo-portfolio-scaled.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 400ms;
+}
+
+.client-2:hover .img-box2 {
+  background-image: url("/assets/client-img/logo-ultimate-renovations-colored.png");
+}
+
+.client-2:hover {
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/client-img/ultimate-behind.png");
+}
+
 .client-6 {
-  background-image: url("/assets/images/portfolio_case-study_prime-hair-bg.webp");
+  background-image: url("/assets/client-img/portfolio_case-study_prime-hair-bg.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .client-5 {
-  background-image: url("/assets/images/portfolio_case-study_unison-bg.webp");
+  background-image: url("/assets/client-img/portfolio_case-study_unison-bg.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .client-4 {
-  background-image: url("/assets/images/portfolio-tfh-bg.webp");
+  background-image: url("/assets/client-img/portfolio-tfh-bg.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .client-3 {
-  background-image: url("/assets/images/case-study-pick-n-pull-bw.webp");
+  background-image: url("/assets/client-img/case-study-pick-n-pull-bw.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .client-2 {
-  background-image: url("/assets/images/ultimate-behind.png");
+  background-image: url("/assets/client-img/ultimate-behind.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .client-1 {
-  background-image: url("/assets/images/image_law.webp");
+  background-image: url("/assets/client-img/image_law.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: 400ms;
 }
 
 .client-card svg, .client-card path , .client-card fa {
@@ -162,7 +218,6 @@ export default {
 
 .con-btn-sm {
   text-decoration: none;
-  margin-top: 17rem;
 }
 
 .client-suc-text {
@@ -175,7 +230,7 @@ export default {
 }
 
 .client-card {
-  width: 33.33%;
+  width: 33.3333%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -201,7 +256,7 @@ export default {
 }
 
 .success-text {
-  margin: 10rem 0 1.5rem 0;
+  margin: 0 0 1.5rem 0;
 }
 
 .con-btn-md p {
