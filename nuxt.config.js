@@ -42,7 +42,20 @@ export default {
   fontawesome: {
     component: 'fa',
     icons: {
-      solid: ['faBuildingColumns', 'faLocationDot', 'faGear', 'faMoneyBill1', 'faGraduationCap', 'faLightbulb']
+      solid: [
+        'faBuildingColumns',
+        'faLocationDot',
+        'faGear',
+        'faMoneyBill1',
+        'faGraduationCap',
+        'faLightbulb',
+        'faArrowPointer',
+        'faMedal',
+        'faPaintBrush',
+        'faStore',
+        'faArrowTurnUp',
+        'faEarthAmericas'
+      ]
     }
   },
   
@@ -64,7 +77,7 @@ export default {
         wght: [700, 800]
       },
       'Open Sans': {
-        wght: [300, 400, 600]
+        wght: [300, 400, 600, 700]
       },
       'Kanit': {
         wght: [300]

@@ -5,8 +5,8 @@
     <div class="cta">
       <Typed/>
     </div>
-    <div class="success-hed">
-      <section class="success-sec">
+    <section class="success-hed">
+      <div class="success-sec">
         <div class="block-tex-lef">
           <nuxt-img class="stairs-img" src="assets/images/image_business-stairs-1.webp" width="342" />
           <div class="success-text">
@@ -31,13 +31,25 @@
           <p>Many companies consider hiring an in-house marketing expert rather than a dedicated marketing company, but you know how the saying goes — jack of all trades, master of none. And hiring an entire in-house crew of masters falls outside the budget for most of our clients.</p>
           <p>GrowME Marketing is a top-rated, award-winning marketing agency based in Calgary, Alberta, serving clients across Canada. We are relentless about producing results that meet all of your marketing requirements for less than the cost of hiring an in-house team. Take advantage of our winning solutions in branding, advertising and website design.</p>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <section>
       <Help/>
     </section>
     <section>
       <Clients/>
+    </section>
+    <section>
+      <div class="client-suc-container">
+        <div v-for="client in clients" :key="client.id" :class="client.class">
+          <NuxtLink class="con-btn-sm" :to="`${client.id}`"><p>See Case Study</p></NuxtLink>
+          <div class="client-suc-text">
+            <fa :icon="client.logo" />
+            <p class="benefit-tex">{{ client.benefit }}</p>
+            <p class="border-up">{{ client.name }} | {{ client.industry }}</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </div>
@@ -45,11 +57,137 @@
 
 <script>
 export default {
-
+  data() {
+  return {
+    clients : [
+      { id: 1, logo: 'arrow-pointer', name: 'Edwards Injury Law', industry: 'LEGAL', benefit: '50% of Sales Now Generated From Website Traffic', class: 'client-1 client-card' },
+      { id: 2, logo: 'medal', name: 'Ultimate Renovations', industry: 'HOME RENOVATIONS', benefit: '#1 Position on Google in Less Than 12 Months!', class: 'client-2 client-card' },
+      { id: 3, logo: 'earth-americas', name: 'Pick-n-Pull', industry: 'AUTOMOTIVE', benefit: 'Canada-Wide Growth', class: 'client-3 client-card' },
+      { id: 4, logo: 'paintbrush', name: 'Toronto Family Hearing', industry: 'HEALTH', benefit: 'Enhanced Brand Positioning & Messaging', class: 'client-4 client-card' },
+      { id: 5, logo: 'store', name: 'Unison', industry: 'REAL ESTATE', benefit: '300% Increase in Leads from Online Inquiries', class: 'client-5 client-card' },
+      { id: 6, logo: 'arrow-turn-up', name: 'Prime Hair Clinic', industry: 'HEALTH', benefit: 'Unprecedented Growth Due to Online Visibility', class: 'client-6 client-card' },
+    ]
+    }
+  }
 }
 </script>
 
 <style>
+
+.client-6 {
+  background-image: url("/assets/images/portfolio_case-study_prime-hair-bg.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.client-5 {
+  background-image: url("/assets/images/portfolio_case-study_unison-bg.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.client-4 {
+  background-image: url("/assets/images/portfolio-tfh-bg.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.client-3 {
+  background-image: url("/assets/images/case-study-pick-n-pull-bw.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.client-2 {
+  background-image: url("/assets/images/ultimate-behind.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.client-1 {
+  background-image: url("/assets/images/image_law.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.client-card svg, .client-card path , .client-card fa {
+  height: 1em;
+  width: 1em;
+  font-size: 30px;
+}
+
+.client-suc-text {
+  width: 100%;
+}
+
+.border-up {
+  width: 98%;
+  color: #ffffff;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  border-top: 1px solid #FFFFFF;
+  text-align: center;
+  padding: 5px;
+}
+
+.benefit-tex {
+  font-family: "Noto Sans", Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  max-width: 260px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.con-btn-sm p {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  border-radius: 100px;
+  padding: 10px 50px;
+  background-color: #E72335;
+  color: #FFFFFF;
+  text-align: center;
+  transition: 300ms;
+}
+
+.con-btn-sm {
+  text-decoration: none;
+  margin-top: 17rem;
+}
+
+.client-suc-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0,0,0,0.47);
+  padding-top: 10px;
+  width: 99%;
+}
+
+.client-card {
+  width: 33.33%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.client-suc-container {
+  display: flex;
+  flex-flow: row wrap;
+}
 
 .to-up {
   text-transform: uppercase;
