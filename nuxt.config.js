@@ -54,7 +54,8 @@ export default {
         'faPaintBrush',
         'faStore',
         'faArrowTurnUp',
-        'faEarthAmericas'
+        'faEarthAmericas',
+        'faPhone'
       ]
     }
   },

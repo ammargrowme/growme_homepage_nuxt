@@ -1,20 +1,36 @@
 <template>
   <header :class="{changeColor: scrollPosition > 50}">
-    <nav>
+    <nav class="desk-nav">
       <div>
-        <NuxtLink :to="{ path: '/' }"><img src="/assets/images/logo_only_white-01-2048x903-1.webp" alt="GrowME Logo" width="180" height="79"></NuxtLink>
+        <NuxtLink :to="{ path: '/' }"><img src="/assets/images/logo_only_white-01-2048x903-1.webp" alt="GrowME Logo" width="180" height="79" class="main-logo"></NuxtLink>
       </div>
       <div>
-        <ul class="menu-li">
+        <ul v-show="!mobile" class="menu-li">
           <li class="upp"><NuxtLink :to="{ path: '/about' }">About</NuxtLink></li>
           <li class="upp"><NuxtLink :to="{ path: '/services' }">Services</NuxtLink></li>
           <li class="upp"><NuxtLink :to="{ path: '/portfolio' }">Portfolio</NuxtLink></li>
           <li class="upp"><NuxtLink :to="{ path: '/contact' }">Contact</NuxtLink></li>
         </ul>
       </div>
-      <div>
+      <div v-show="mobile" class="phone-box">
+        <a href="tel:+18555476963" class="btn-lin"><fa icon="phone" /></a>
+      </div>
+      <div class="con-box">
         <NuxtLink :to="{ path: '/contact-test' }" class="btn-lin"><p class="con-btn">Request Consultation</p></NuxtLink>
       </div>
+      <div @click="toggleMobileNav" v-show="mobile" class="hamburger" :class="{'hamburger open' : mobileNav}">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <nav v-show="mobileNav" class="mobile-nav open" :class="{'mobile-nav open' : toggleMobileNav }">
+      <ul>
+        <li><NuxtLink :to="{ path: '/about' }">About</NuxtLink></li>
+        <li><NuxtLink :to="{ path: '/services' }">Services</NuxtLink></li>
+        <li><NuxtLink :to="{ path: '/portfolio' }">Portfolio</NuxtLink></li>
+        <li><NuxtLink :to="{ path: '/contact' }">Contact</NuxtLink></li>
+      </ul>
     </nav>
   </header>
 </template>
@@ -42,7 +58,7 @@ export default {
     },
     checkScreen() {
       this.windowWidth = window.innerWidth
-      if (this.windowWidth <= 954){
+      if (this.windowWidth <= 1024){
         this.mobile = true
         return
       }
@@ -59,6 +75,99 @@ export default {
 
 
 <style scoped>
+
+/* ********** */
+/* Mobile Nav */
+/* ********** */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 35px;
+  height: 4px;
+  margin: 8px auto;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  transition: 300ms;
+}
+
+@media screen and (max-width: 1024px) {
+  .phone-box svg {
+    font-size: 20px;
+    color: #e72335;
+    padding: 12px;
+  }
+  .phone-box {
+    margin: 0 1rem 0 auto;
+    border: 3px solid #e72335;
+    border-radius: 50px;
+  }
+  .con-btn {
+    width: 115px;
+    text-align: center;
+    border-radius: 50px !important;
+  }
+  .desk-nav {
+    min-width: 100%;
+  }
+  header {
+    display: block !important;
+  }
+  .main-logo {
+    width: 140px;
+    height: 62px;
+    margin: 0 0 0 1rem;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    margin: 2rem 2rem 2rem 1rem;
+    background-color: #e72335;
+    padding: 5px 10px;
+  }
+  .hamburger.open .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.open .bar:nth-child(1){
+    transform: translateY(11px) rotate(45deg);
+  }
+  .hamburger.open .bar:nth-child(3){
+    transform: translateY(-12px) rotate(-45deg);
+  }
+  .mobile-nav {
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: #333333;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+  }
+  .mobile-nav.open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .mobile-nav.open ul {
+    margin: auto 0px;
+    padding: 0px;
+  }
+  .mobile-nav.open li {
+    list-style-type: none;
+    font-size: 14px;
+    padding: 25px
+  }
+}
+
+/* *********** */
+/* Desktop Nav */
+/* *********** */
+
 .changeColor {
   background-color: #333333;
 }
@@ -82,7 +191,7 @@ li a {
   color: #FFFFFF;
 }
 
-nav {
+.desk-nav {
   font-family: 'Noto Sans', sans-serif;
   text-transform: uppercase;
   color: #FFFFFF;
