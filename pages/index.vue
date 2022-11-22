@@ -42,6 +42,9 @@
     <section>
       <Clientsuccess/>
     </section>
+    <section class="team-sec">
+      <Carouselsec/>
+    </section>
   </main>
 </div>
 </template>
@@ -55,6 +58,14 @@ export default {
 </script>
 
 <style>
+.team-sec {
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/assets/images/image_background.webp");
+  background-size: cover;
+}
+
+.to-up {
+  text-transform: uppercase;
+}
 
 .con-btn-md p {
   text-transform: uppercase;

@@ -255,10 +255,6 @@ export default {
   flex-flow: row wrap;
 }
 
-.to-up {
-  text-transform: uppercase;
-}
-
 .feature-text {
   color: #1a2444;
   font-family: 'Noto Sans', sans-serif;
