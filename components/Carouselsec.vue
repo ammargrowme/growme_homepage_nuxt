@@ -46,9 +46,15 @@
         </VueSlickCarousel>
       </div>
     </div>
-  <div>
-
-  </div>
+    <div class="sales-machine">
+      <div class="machine-text">
+        <h3>How To Build An Online Sales Machine</h3>
+        <p>FIND OUT MORE ON FORBES</p>
+      </div>
+      <div class="machine-img">
+        <nuxt-img src="/assets/images/copywrighter.webp" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -62,16 +68,17 @@ export default {
         teamSettings: {
           autoplay: true,
           infinite: true,
-          autoplaySpeed: 100,
+          autoplaySpeed: 3000,
           arrows: false,
           slidesToShow: 4,
-          slidesToScroll: 1,
-          speed: 800,
-          autoplaySpeed: 800,
-          cssEase: 'ease',
+          speed: 3000,
+          autoplaySpeed: 3000,
+          cssEase: 'linear',
           swipeToSlide: true,
           pauseOnHover: false,
           draggable: true,
+          initialSlide: 1,
+          slidesToScroll: 4,
         },
         valSettings: {
           autoplay: true,
@@ -82,6 +89,100 @@ export default {
 </script>
 
 <style>
+
+.machine-img img {
+  border-radius: 300px;
+  width: 300px;
+  height: 300px;
+}
+
+.machine-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 580px;
+  text-align: center;
+  line-height: 1;
+}
+
+.sales-machine {
+  background-image: linear-gradient(rgba(206, 36, 30, 0.9), rgba(206, 36, 30, 0.9)), url("/assets/images/urban-pattern-red-bg.webp");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 260px;
+  margin: 4rem auto;
+  width: 1000px;
+}
+
+.sales-machine h3 {
+  color: #ffffff;
+  font-family: "Noto Sans", Sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+  margin: 0px;
+}
+
+.sales-machine p {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2.2px;
+  color: #D80303;
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  padding: 15px 50px;
+}
+
+.slick-next:before, .slick-prev:before {
+  font-size: 20px;
+}
+
+.slick-next:before {
+  content: ">";
+  font-family: 'Nanum Myeongjo', serif;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+.slick-prev:before {
+  content: "<";
+  font-family: 'Nanum Myeongjo', serif;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+.slick-next, .slick-prev {
+  font-size: 0px;
+  border-radius: 100px;
+  background-color: #ed1c24;
+  border: none;
+}
+
+.slick-next:hover, .slick-prev:hover {
+  cursor: pointer;
+}
+
+.slick-prev {
+  padding: 10px 8px 10px 4px;
+}
+
+.slick-next {
+  padding: 10px 4px 10px 8px;
+}
+
+.val-slide-box .slick-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.val-slide-box button {
+  max-height: 45px;
+}
+
 .slide-flex {
   display: flex;
   flex-flow: row wrap;

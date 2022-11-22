@@ -84,6 +84,9 @@ export default {
       },
       'Permanent Marker': {
         wght: [400]
+      },
+      'Nanum Myeongjo': {
+        wght: [800]
       }
     }
   }
