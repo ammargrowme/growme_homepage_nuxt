@@ -59,8 +59,9 @@ export default {
 
 <style>
 .team-sec {
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/assets/images/image_background.webp");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("/assets/images/image_background.webp");
   background-size: cover;
+  max-height: 100%;
 }
 
 .to-up {
