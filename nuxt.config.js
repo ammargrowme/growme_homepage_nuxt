@@ -81,7 +81,7 @@ export default {
         wght: [300, 400, 600, 700]
       },
       'Kanit': {
-        wght: [300]
+        wght: [300, 500]
       },
       'Permanent Marker': {
         wght: [400]

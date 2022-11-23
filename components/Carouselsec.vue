@@ -14,6 +14,7 @@
           <div><nuxt-img src="/assets/team/growme_abby.webp" width="177" /></div>
         </VueSlickCarousel>
         <p class="team-tex">Meet the passionate high performance team behind our successful clients GrowME is a team of 30+ in-house marketing experts, artists, designers, developers, writers, creators, managers, and more committed to helping you achieve outstanding results.</p>
+        <NuxtLink class="con-btn-md" :to="{ path: '/team' }"><p>Meet The Team</p></NuxtLink>
       </div>
       <div class="val-slide-box">
         <h3>The Culture that Guides Us</h3>
@@ -107,6 +108,9 @@ export default {
 
 .sales-machine {
   background-image: linear-gradient(rgba(206, 36, 30, 0.9), rgba(206, 36, 30, 0.9)), url("/assets/images/urban-pattern-red-bg.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: row;
   align-items: center;

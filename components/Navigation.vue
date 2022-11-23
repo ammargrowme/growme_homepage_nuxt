@@ -75,7 +75,6 @@ export default {
 
 
 <style scoped>
-
 /* ********** */
 /* Mobile Nav */
 /* ********** */
@@ -112,6 +111,7 @@ export default {
   }
   .desk-nav {
     min-width: 100%;
+    height: 100px;
   }
   header {
     display: block !important;
@@ -134,7 +134,7 @@ export default {
     opacity: 0;
   }
   .hamburger.open .bar:nth-child(1){
-    transform: translateY(11px) rotate(45deg);
+    transform: translateY(11.5px) rotate(45deg);
   }
   .hamburger.open .bar:nth-child(3){
     transform: translateY(-12px) rotate(-45deg);

@@ -45,23 +45,29 @@
     <section class="team-sec">
       <Carouselsec/>
     </section>
+    <section>
+      <Growmereviews/>
+    </section>
   </main>
 </div>
 </template>
 
 <script>
-import Clientsuccess from '../components/Clientsuccess.vue'
 export default {
-  components: { Clientsuccess },
-
 }
 </script>
 
 <style>
+.feature-text {
+  color: #1a2444;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+
 .team-sec {
   background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1) 45%), url("/assets/images/image_background.webp");
   background-size: cover;
-  height: 90vh;
   padding-top: 5rem;
 }
 

@@ -255,13 +255,6 @@ export default {
   flex-flow: row wrap;
 }
 
-.feature-text {
-  color: #1a2444;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 100;
-}
-
 .success-text {
   margin: 0 0 1.5rem 0;
 }
