@@ -24,14 +24,16 @@
         <span class="bar"></span>
       </div>
     </nav>
-    <nav v-show="mobileNav" class="mobile-nav open" :class="{'mobile-nav open' : toggleMobileNav }">
-      <ul>
-        <li><NuxtLink :to="{ path: '/about' }">About</NuxtLink></li>
-        <li><NuxtLink :to="{ path: '/services' }">Services</NuxtLink></li>
-        <li><NuxtLink :to="{ path: '/portfolio' }">Portfolio</NuxtLink></li>
-        <li><NuxtLink :to="{ path: '/contact' }">Contact</NuxtLink></li>
-      </ul>
-    </nav>
+    <Transition name="navfade">
+      <nav v-show="mobileNav" class="mobile-nav open" :class="{'mobile-nav open' : toggleMobileNav }">
+        <ul>
+          <li><NuxtLink :to="{ path: '/about' }">About</NuxtLink></li>
+          <li><NuxtLink :to="{ path: '/services' }">Services</NuxtLink></li>
+          <li><NuxtLink :to="{ path: '/portfolio' }">Portfolio</NuxtLink></li>
+          <li><NuxtLink :to="{ path: '/contact' }">Contact</NuxtLink></li>
+        </ul>
+      </nav>
+    </Transition>
   </header>
 </template>
 
@@ -78,6 +80,15 @@ export default {
 /* ********** */
 /* Mobile Nav */
 /* ********** */
+.navfade-enter-active,
+.navfade-leave-active {
+  transition: opacity 200ms ease;
+}
+
+.navfade-enter,
+.navfade-leave-to {
+  opacity: 0;
+}
 .hamburger {
   display: none;
   cursor: pointer;
@@ -98,11 +109,19 @@ export default {
     font-size: 20px;
     color: #e72335;
     padding: 12px;
+    transition: 300ms;
   }
   .phone-box {
     margin: 0 1rem 0 auto;
     border: 3px solid #e72335;
     border-radius: 50px;
+    transition: 300ms;
+  }
+  .phone-box:hover {
+    background-color: #e72335;
+  }
+  .phone-box:hover svg {
+    color: #FFFFFF;
   }
   .con-btn {
     width: 115px;

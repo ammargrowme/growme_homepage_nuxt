@@ -55,7 +55,8 @@ export default {
         'faStore',
         'faArrowTurnUp',
         'faEarthAmericas',
-        'faPhone'
+        'faPhone',
+        'faStar'
       ]
     }
   },

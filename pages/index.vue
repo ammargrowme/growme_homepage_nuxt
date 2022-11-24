@@ -45,7 +45,7 @@
     <section class="team-sec">
       <Carouselsec/>
     </section>
-    <section>
+    <section class="review-sec">
       <Growmereviews/>
     </section>
   </main>
@@ -58,6 +58,14 @@ export default {
 </script>
 
 <style>
+.review-sec {
+  padding: 1rem 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("/assets/images/image_computer-desk-blur.webp");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
 .feature-text {
   color: #1a2444;
   font-family: 'Noto Sans', sans-serif;

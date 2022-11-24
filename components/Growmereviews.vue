@@ -1,13 +1,34 @@
 <template>
-  <div>
-    <h2 class="review-head">What Clients Are Saying About GrowME</h2>
-    <div>
-      <div v-for="review in reviews" :key="review.id">
-        <p>{{ review.text }}</p>
-        <div></div>
-        <strong><p>{{ review.company }}</p></strong>
+  <div class="temp-box">
+    <div class="flex-rev-gog">
+      <h2 class="review-head">What Clients Are Saying About GrowME</h2>
+      <div class="google-logo-box">
+        <nuxt-img src="assets/images/google_review_logo.webp" width="140" />
+        <div class="starbox rev-star">
+          <fa icon="star"/>
+          <fa icon="star"/>
+          <fa icon="star"/>
+          <fa icon="star"/>
+          <fa icon="star"/>
+        </div>
+        <p class="upper-rev">4.9 Google Rating</p>
+        <p class="lower-rev">Based on 103 Reviews</p>
       </div>
     </div>
+    <div class="review-box">
+      <div v-for="review in reviews" :key="review.id" class="review">
+        <p class="review-text">{{ review.text }}</p>
+        <div class="rev-star">
+          <fa icon="star"/>
+          <fa icon="star"/>
+          <fa icon="star"/>
+          <fa icon="star"/>
+          <fa icon="star"/>
+        </div>
+        <strong><p class="comp-rev">{{ review.company }}</p></strong>
+      </div>
+    </div>
+    <a class="con-btn-md" href="https://g.page/growmemarketing?share"><p class="to-up">See More Reviews</p></a>
   </div>
 </template>
 
@@ -29,6 +50,85 @@ export default {
 </script>
 
 <style scoped>
+.flex-rev-gog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.google-logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.google-logo-box img {
+  padding: 5px;
+}
+
+.starbox {
+  display: flex;
+}
+
+.upper-rev {
+  color: #CE241E;
+  font-family: "Noto Sans", Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.lower-rev {
+  color: #FFFFFF;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+.temp-box {
+  width: 1300px;
+}
+
+.rev-star {
+  color: #CE141C;
+}
+
+.review-text {
+  color: #232323;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 16px;
+  line-height: 1.8em;
+  font-weight: 300;
+}
+.comp-rev {
+  color: #222222;
+  font-family: "Kanit", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.8em;
+  margin: 0;
+}
+
+.review {
+  height: 540px;
+  width: 340px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #FFFFFFD1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.review-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 .review-head {
   color: #D80303;
   font-family: "Kanit", Sans-serif;
@@ -37,5 +137,7 @@ export default {
   line-height: 1em;
   letter-spacing: 1px;
   width: 650px;
+  padding: 0 1rem;
+  margin: 2rem 0 1rem 0;
 }
 </style>
