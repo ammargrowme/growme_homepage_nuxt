@@ -235,9 +235,9 @@ export default {
   text-align: center;
 }
 
-.team-slide-box img {
+/* .team-slide-box img {
   pointer-events: none;
-}
+} */
 
 .team-slide-box h3 {
   color: #ce241e;

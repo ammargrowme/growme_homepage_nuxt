@@ -54,7 +54,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -137,7 +137,7 @@ export default {
   line-height: 1em;
   letter-spacing: 1px;
   width: 650px;
-  padding: 0 1rem;
+  padding: 0 1rem 0 0;
   margin: 2rem 0 1rem 0;
 }
 </style>
