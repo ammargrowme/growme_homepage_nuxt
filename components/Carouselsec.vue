@@ -18,33 +18,37 @@
       </div>
       <div class="val-slide-box">
         <h3>The Culture that Guides Us</h3>
-        <VueSlickCarousel v-bind="valSettings">
-          <div class="val-box">
-            <p class="val-head">Good Vibes Only</p>
-            <nuxt-img src="/assets/team/image_values-01.webp" width="300" />
-            <p class="bot-val-tex">
-              Our team is made up of people with positive can-do attitudes who want to help our clients grow.
-              We help each other. We treat each other the way we want to be treated, and our happiness cultivates
-              company growth.
-            </p>
-          </div>
-          <div class="val-box">
-            <p class="val-head">Push It to The Limit</p>
-            <nuxt-img src="/assets/team/image_values-02.webp" width="300" />
-            <p class="bot-val-tex">
-							We always deliver the most value we can for our clients and are always improving.
-              Performance and boldness run in the veins of our team and the best is what we strive to be.
-            </p>
-          </div>
-          <div class="val-box">
-            <p class="val-head">Keepin' It Real</p>
-            <nuxt-img src="/assets/team/image_values-03.webp" width="300" />
-            <p class="bot-val-tex">
-							Integrity and respect are at the core of our family. Our reputation forms GrowME’s reputation
-              and we are committed to honesty, transparency and authenticity. We say what we mean and deliver it.
-            </p>
-          </div>
-        </VueSlickCarousel>
+        <div class="val-flex">
+          <fa class="nexprevBtn" @click="showBefore" icon="chevron-left" />
+          <VueSlickCarousel v-bind="valSettings" ref="carouselVal">
+            <div class="val-box">
+              <p class="val-head">Good Vibes Only</p>
+              <nuxt-img src="/assets/team/image_values-01.webp" width="300" />
+              <p class="bot-val-tex">
+                Our team is made up of people with positive can-do attitudes who want to help our clients grow.
+                We help each other. We treat each other the way we want to be treated, and our happiness cultivates
+                company growth.
+              </p>
+            </div>
+            <div class="val-box">
+              <p class="val-head">Push It to The Limit</p>
+              <nuxt-img src="/assets/team/image_values-02.webp" width="300" />
+              <p class="bot-val-tex">
+                We always deliver the most value we can for our clients and are always improving.
+                Performance and boldness run in the veins of our team and the best is what we strive to be.
+              </p>
+            </div>
+            <div class="val-box">
+              <p class="val-head">Keepin' It Real</p>
+              <nuxt-img src="/assets/team/image_values-03.webp" width="300" />
+              <p class="bot-val-tex">
+                Integrity and respect are at the core of our family. Our reputation forms GrowME’s reputation
+                and we are committed to honesty, transparency and authenticity. We say what we mean and deliver it.
+              </p>
+            </div>
+          </VueSlickCarousel>
+          <fa class="nexprevBtn" @click="showNext" icon="chevron-right" />
+        </div>
       </div>
     </div>
     <div class="sales-machine">
@@ -85,7 +89,16 @@ export default {
         },
         valSettings: {
           autoplay: true,
+          arrows: false,
         }
+      }
+    },
+    methods: {
+      showNext() {
+        this.$refs.carouselVal.next()
+      },
+      showBefore() {
+        this.$refs.carouselVal.prev()
       }
     }
 }
@@ -148,40 +161,7 @@ export default {
   font-size: 20px;
 }
 
-.slick-next:before {
-  content: ">";
-  font-family: 'Nanum Myeongjo', serif;
-  color: #FFFFFF;
-  padding: 10px;
-}
-
-.slick-prev:before {
-  content: "<";
-  font-family: 'Nanum Myeongjo', serif;
-  color: #FFFFFF;
-  padding: 10px;
-}
-
-.slick-next, .slick-prev {
-  font-size: 0px;
-  border-radius: 100px;
-  background-color: #ed1c24;
-  border: none;
-}
-
-.slick-next:hover, .slick-prev:hover {
-  cursor: pointer;
-}
-
-.slick-prev {
-  padding: 10px 8px 10px 4px;
-}
-
-.slick-next {
-  padding: 10px 4px 10px 8px;
-}
-
-.val-slide-box .slick-slider {
+.val-flex {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -197,6 +177,10 @@ export default {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+}
+
+.slide-flex .slick-slider {
+  min-width: 400px;
 }
 
 .bot-val-tex {
