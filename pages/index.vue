@@ -75,7 +75,7 @@ export default {
   display: flex;
   justify-content: center;
 }
-
+/* test */
 .feature-text {
   color: #1a2444;
   font-family: 'Noto Sans', sans-serif;
