@@ -78,6 +78,7 @@ export default {
           autoplay: true,
           autoplaySpeed: 7000,
           arrows: false,
+          lazyLoad: 'progressive',
         },
       }
     },
@@ -161,6 +162,7 @@ export default {
   height: 100vh;
   padding: 4rem 0 0 0;
 }
+
 .spin {
   border-radius: 180px;
   border: 10px solid #FFFFFF;
