@@ -67,7 +67,7 @@ export default {
 }
 
 .client-4:hover .img-box4 {
-  background-image: url("/assets/client-img/portfolio-tfh-logo-color.png");
+  background-image: url("/assets/client-img/portfolio-tfh-logo-color.webp");
 }
 
 .client-4:hover {
@@ -77,7 +77,7 @@ export default {
 .img-box4 {
   width: 300px;
   height: 200px;
-  background-image: url("/assets/client-img/portfolio-tfh-logo-white.png");
+  background-image: url("/assets/client-img/portfolio-tfh-logo-white.webp");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -123,7 +123,7 @@ export default {
 .img-box2 {
   width: 200px;
   height: 150px;
-  background-image: url("/assets/client-img/ultimate-renovations-logo-portfolio-scaled.png");
+  background-image: url("/assets/client-img/ultimate-renovations-logo-portfolio-scaled.webp");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -131,11 +131,11 @@ export default {
 }
 
 .client-2:hover .img-box2 {
-  background-image: url("/assets/client-img/logo-ultimate-renovations-colored.png");
+  background-image: url("/assets/client-img/logo-ultimate-renovations-colored.webp");
 }
 
 .client-2:hover {
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/client-img/ultimate-behind.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/client-img/ultimate-behind.webp");
 }
 
 .client-6 {
@@ -171,7 +171,7 @@ export default {
 }
 
 .client-2 {
-  background-image: url("/assets/client-img/ultimate-behind.png");
+  background-image: url("/assets/client-img/ultimate-behind.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
