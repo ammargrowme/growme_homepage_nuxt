@@ -48,6 +48,9 @@
     <section class="review-sec">
       <Growmereviews/>
     </section>
+    <section>
+      <Details/>
+    </section>
   </main>
 </div>
 </template>

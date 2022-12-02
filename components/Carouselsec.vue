@@ -4,14 +4,14 @@
       <div class="team-slide-box">
         <h3>The Team to Help You Win</h3>
         <VueSlickCarousel v-bind="teamSettings">
-          <div><nuxt-img src="/assets/team/growme_tarek.webp" width="177" /></div>
-          <div><nuxt-img src="/assets/team/growme_sean-ali.webp" width="177" /></div>
-          <div><nuxt-img src="/assets/team/growme_leah.webp" width="177" /></div>
-          <div><nuxt-img src="/assets/team/growme_lauren.webp" width="177" /></div>
-          <div><nuxt-img src="/assets/team/growme_jules.webp" width="177" /></div>
-          <div><nuxt-img src="/assets/team/growme_dulce.webp" width="177" /></div>
-          <div><nuxt-img src="/assets/team/growme_ammar.webp" width="177" /></div>
-          <div><nuxt-img src="/assets/team/growme_abby.webp" width="177" /></div>
+          <div class="let-drag"><nuxt-img src="/assets/team/growme_tarek.webp" width="177" /></div>
+          <div class="let-drag"><nuxt-img src="/assets/team/growme_sean-ali.webp" width="177" /></div>
+          <div class="let-drag"><nuxt-img src="/assets/team/growme_leah.webp" width="177" /></div>
+          <div class="let-drag"><nuxt-img src="/assets/team/growme_lauren.webp" width="177" /></div>
+          <div class="let-drag"><nuxt-img src="/assets/team/growme_jules.webp" width="177" /></div>
+          <div class="let-drag"><nuxt-img src="/assets/team/growme_dulce.webp" width="177" /></div>
+          <div class="let-drag"><nuxt-img src="/assets/team/growme_ammar.webp" width="177" /></div>
+          <div class="let-drag"><nuxt-img src="/assets/team/growme_abby.webp" width="177" /></div>
         </VueSlickCarousel>
         <p class="team-tex">Meet the passionate high performance team behind our successful clients GrowME is a team of 30+ in-house marketing experts, artists, designers, developers, writers, creators, managers, and more committed to helping you achieve outstanding results.</p>
         <NuxtLink class="con-btn-md" :to="{ path: '/team' }"><p>Meet The Team</p></NuxtLink>
@@ -69,17 +69,19 @@ export default {
         teamSettings: {
           autoplay: true,
           infinite: true,
-          autoplaySpeed: 3000,
+          autoplaySpeed: 5000,
           arrows: false,
           slidesToShow: 4,
-          speed: 3000,
-          autoplaySpeed: 3000,
+          speed: 5000,
+          autoplaySpeed: 5000,
           cssEase: 'linear',
-          swipeToSlide: true,
+          swipeToSlide: false,
+          draggable: false,
           pauseOnHover: false,
-          draggable: true,
-          initialSlide: 1,
-          slidesToScroll: 4,
+          accessibility: false,
+          slidesToScroll: 8,
+          waitForAnimate: false,
+          touchThreshold: 10,
         },
         valSettings: {
           autoplay: true,
@@ -90,6 +92,9 @@ export default {
 </script>
 
 <style>
+.let-drag {
+  pointer-events: none;
+}
 
 .machine-img img {
   border-radius: 300px;
@@ -235,9 +240,9 @@ export default {
   text-align: center;
 }
 
-/* .team-slide-box img {
+.team-slide-box img {
   pointer-events: none;
-} */
+}
 
 .team-slide-box h3 {
   color: #ce241e;

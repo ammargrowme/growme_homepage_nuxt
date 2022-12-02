@@ -56,7 +56,9 @@ export default {
         'faArrowTurnUp',
         'faEarthAmericas',
         'faPhone',
-        'faStar'
+        'faStar',
+        'faChevronLeft',
+        'faChevronRight'
       ]
     }
   },
