@@ -78,7 +78,6 @@ export default {
           autoplay: true,
           autoplaySpeed: 7000,
           arrows: false,
-          lazyLoad: 'progressive',
         },
       }
     },
