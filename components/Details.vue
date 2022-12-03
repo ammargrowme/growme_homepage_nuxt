@@ -63,6 +63,7 @@
       </VueSlickCarousel>
       <fa class="nexprevBtn" @click="showNext" icon="chevron-right" />
     </div>
+    <NuxtLink class="con-btn-lg to-upp" :to="{ path: '/'}"><p>Click Here To Get Results</p></NuxtLink>
   </div>
 </template>
 
@@ -158,7 +159,6 @@ export default {
 .detail-box {
   width: 65%;
   margin: 0 auto;
-  height: 100vh;
   padding: 4rem 0 0 0;
 }
 

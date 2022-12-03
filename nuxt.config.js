@@ -38,11 +38,6 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/fontawesome'
   ],
-  
-  server: {
-    port: process.env.PORT,
-    host: process.env.HOST
-  },
 
   fontawesome: {
     component: 'fa',

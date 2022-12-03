@@ -48,8 +48,11 @@
     <section class="review-sec">
       <Growmereviews/>
     </section>
-    <section>
+    <section class="detail-sec">
       <Details/>
+    </section>
+    <section class="winning-sec">
+      <WinningResults/>
     </section>
   </main>
 </div>
@@ -68,6 +71,16 @@ export default {
 </script>
 
 <style>
+.detail-sec {
+  height: 120vh;
+}
+
+.winning-sec {
+  background-image: linear-gradient(rgba(4, 4, 14, 0.7), rgba(4, 4, 14, 0.7)), url("/assets/images/image_background-analytics.webp");
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
 .review-sec {
   padding: 1rem 0;
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("/assets/images/image_computer-desk-blur.webp");
@@ -75,7 +88,7 @@ export default {
   display: flex;
   justify-content: center;
 }
-/* test */
+
 .feature-text {
   color: #1a2444;
   font-family: 'Noto Sans', sans-serif;
@@ -115,6 +128,29 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.con-btn-lg {
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.con-btn-lg p {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2.2px;
+  border-radius: 100px;
+  padding: 15px 50px;
+  background-color: #E72335;
+  color: #FFFFFF;
+  display: inline-block;
+  text-align: center;
+  transition: 300ms;
 }
 
 .con-btn-md p:hover {

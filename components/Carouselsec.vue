@@ -4,14 +4,14 @@
       <div class="team-slide-box">
         <h3>The Team to Help You Win</h3>
         <VueSlickCarousel v-bind="teamSettings">
-          <div class="let-drag"><nuxt-img src="/assets/team/growme_tarek.webp" width="177" /></div>
-          <div class="let-drag"><nuxt-img src="/assets/team/growme_sean-ali.webp" width="177" /></div>
-          <div class="let-drag"><nuxt-img src="/assets/team/growme_leah.webp" width="177" /></div>
-          <div class="let-drag"><nuxt-img src="/assets/team/growme_lauren.webp" width="177" /></div>
-          <div class="let-drag"><nuxt-img src="/assets/team/growme_jules.webp" width="177" /></div>
-          <div class="let-drag"><nuxt-img src="/assets/team/growme_dulce.webp" width="177" /></div>
-          <div class="let-drag"><nuxt-img src="/assets/team/growme_ammar.webp" width="177" /></div>
-          <div class="let-drag"><nuxt-img src="/assets/team/growme_abby.webp" width="177" /></div>
+          <nuxt-img src="/assets/team/growme_tarek.webp" />
+          <nuxt-img src="/assets/team/growme_sean-ali.webp" />
+          <nuxt-img src="/assets/team/growme_leah.webp" />
+          <nuxt-img src="/assets/team/growme_lauren.webp" />
+          <nuxt-img src="/assets/team/growme_jules.webp" />
+          <nuxt-img src="/assets/team/growme_dulce.webp" />
+          <nuxt-img src="/assets/team/growme_ammar.webp" />
+          <nuxt-img src="/assets/team/growme_abby.webp" />
         </VueSlickCarousel>
         <p class="team-tex">Meet the passionate high performance team behind our successful clients GrowME is a team of 30+ in-house marketing experts, artists, designers, developers, writers, creators, managers, and more committed to helping you achieve outstanding results.</p>
         <NuxtLink class="con-btn-md" :to="{ path: '/team' }"><p>Meet The Team</p></NuxtLink>
@@ -73,19 +73,14 @@ export default {
         teamSettings: {
           autoplay: true,
           infinite: true,
-          autoplaySpeed: 5000,
+          autoplaySpeed: 1000,
           arrows: false,
           slidesToShow: 4,
-          speed: 5000,
-          autoplaySpeed: 5000,
+          speed: 1000,
           cssEase: 'linear',
           swipeToSlide: false,
           draggable: false,
           pauseOnHover: false,
-          accessibility: false,
-          slidesToScroll: 8,
-          waitForAnimate: false,
-          touchThreshold: 10,
         },
         valSettings: {
           autoplay: true,
@@ -107,6 +102,7 @@ export default {
 <style>
 .let-drag {
   pointer-events: none;
+  width: 100%;
 }
 
 .machine-img img {
