@@ -2,7 +2,7 @@
   <header :class="{changeColor: scrollPosition > 50}">
     <nav class="desk-nav">
       <div>
-        <NuxtLink :to="{ path: '/' }"><nuxt-img src="/assets/images/logo_only_white-01-2048x903-1.webp" alt="GrowME Logo" width="180" height="79" class="main-logo"/></NuxtLink>
+        <NuxtLink :to="{ path: '/' }"><nuxt-img src="/assets/images/logo_only_white-01-2048x903-1.webp" alt="GrowME Logo" width="180.6" height="79.6" class="main-logo"/></NuxtLink>
       </div>
       <div>
         <ul v-show="!mobile" class="menu-li">
@@ -187,6 +187,11 @@ export default {
 /* Desktop Nav */
 /* *********** */
 
+.main-logo {
+  width: 180.6px;
+  height: 79.6px;
+}
+
 .changeColor {
   background-color: #333333;
 }
@@ -196,7 +201,7 @@ header {
   display: flex;
   justify-content: center;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   top: 0;
   transition: 300ms;
 }

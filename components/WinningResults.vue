@@ -24,6 +24,7 @@ export default {
 </script>
 
 <style scoped>
+
 .first-ch {
   width: 25%;
 }
@@ -42,7 +43,7 @@ export default {
 
 .winning-box {
   text-align: center;
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
 }
 .winning-box h2 {

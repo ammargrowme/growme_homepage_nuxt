@@ -54,11 +54,15 @@
     <section class="winning-sec">
       <WinningResults/>
     </section>
+    <section class="great-sec">
+      <MakesUsGreat/>
+    </section>
   </main>
 </div>
 </template>
 
 <script>
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 export default {
   head () {
     return {
@@ -71,6 +75,11 @@ export default {
 </script>
 
 <style>
+.great-sec {
+  background-color: #7a7a7a;
+  padding: 4rem 0;
+}
+
 .detail-sec {
   height: 120vh;
 }
@@ -107,7 +116,7 @@ export default {
   text-transform: uppercase;
 }
 
-.con-btn-md p {
+.con-btn-md p, .new-mid p {
   text-transform: uppercase;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
@@ -120,7 +129,7 @@ export default {
   display: inline-block;
   text-align: center;
   transition: 300ms;
-  width: 250px;
+  min-width: 250px;
 }
 
 .con-btn-md {
