@@ -79,6 +79,7 @@ export default {
   background-image: linear-gradient(rgba(4, 4, 14, 0.7), rgba(4, 4, 14, 0.7)), url("/assets/images/image_background-analytics.webp");
   height: 100vh;
   background-repeat: no-repeat;
+  padding: 5rem 0;
 }
 
 .review-sec {
