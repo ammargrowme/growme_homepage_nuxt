@@ -56,6 +56,10 @@
     </section>
     <section class="great-sec">
       <MakesUsGreat/>
+      <div class="consult-cta">
+        <h2>Let's Start with a Hello. Let's Talk.</h2>
+        <NuxtLink class="consult-btn" :to="{ path: '/contact' }"><p>Request A Consultation</p></NuxtLink>
+      </div>
     </section>
   </main>
 </div>
@@ -75,9 +79,51 @@ export default {
 </script>
 
 <style>
+.consult-btn {
+  text-decoration: none;
+  display: block;
+}
+
+.consult-btn p {
+  background-color: #FFFFFF;
+  color: #ce241e;
+  max-width: 350px;
+  font-family: "Open Sans",Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 2rem auto 0 auto;
+  padding: 10px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.consult-cta h2 {
+  color: #FFFFFF;
+  font-family: "Noto Sans",Sans-serif;
+  font-size: 55px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 0;
+  text-shadow: 0 0 10px rgba(0,0,0,.2);
+  max-width: 25ch;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.consult-cta {
+  background-image: linear-gradient(rgba(206, 36, 30, 0.9), rgba(206, 36, 30, 0.9)), url("/assets/images/urban-pattern-red-bg.webp");
+  padding: 5rem 0;
+}
+
 .great-sec {
-  background-color: #7a7a7a;
-  padding: 4rem 0;
+  background-image: linear-gradient( rgba(122, 122, 122, 1), rgba(122, 122, 122, 0.9)), url("/assets/images/image_background-downtown.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 4rem 0 0 0;
 }
 
 .detail-sec {
