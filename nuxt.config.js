@@ -75,7 +75,7 @@ export default {
   googleFonts: {
     families: {
       'Noto Sans': {
-        wght: [100, 400, 700, 800]
+        wght: [100, 400, 600, 700, 800]
       },
       'Montserrat': {
         wght: [700, 800]

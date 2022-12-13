@@ -14,7 +14,7 @@
             <p class="thin-red">Our Calgary marketing agency is proof — there's a better way to grow.</p>
           </div>
           <div class="con-btn-hed">
-            <NuxtLink class="con-btn-md" :to="{ path: '/contact' }"><p>Talk To The Experts</p></NuxtLink>
+            <NuxtLink class="con-btn-md" :to="{ path: '/' }"><p>Talk To The Experts</p></NuxtLink>
           </div>
           <p class="feature-text">Featured In:</p>
           <div class="feat-sec">
@@ -60,6 +60,9 @@
         <h2>Let's Start with a Hello. Let's Talk.</h2>
         <NuxtLink class="consult-btn" :to="{ path: '/contact' }"><p>Request A Consultation</p></NuxtLink>
       </div>
+    </section>
+    <section>
+      <GivingBack />
     </section>
   </main>
 </div>
@@ -116,6 +119,9 @@ export default {
 .consult-cta {
   background-image: linear-gradient(rgba(206, 36, 30, 0.9), rgba(206, 36, 30, 0.9)), url("/assets/images/urban-pattern-red-bg.webp");
   padding: 5rem 0;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .great-sec {

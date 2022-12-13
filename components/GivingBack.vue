@@ -1,0 +1,100 @@
+<template>
+  <div class="give-back-bg">
+    <div class="give-back-flex">
+      <div>
+        <h3>Giving Back with</h3>
+        <nuxt-img src="assets/images/growmentor-small-letters-dark.webp" width="330" height="100"/>
+      </div>
+      <div class="give-right">
+        <p class="give-p">When you partner with GrowME for your marketing and website needs, you're helping youth achieve their dreams.</p>
+        <p class="give-p">Led by GrowME CEO, GrowMEntor is a course designed to help youth realize and achieve their full potential.</p>
+        <NuxtLink :to="{ path: '/' }" class="con-btn-md"><p>Learn More</p></NuxtLink>
+      </div>
+    </div>
+    <div class="btm-slider">
+      <p class="giving-btm">GrowME is a proud sponsor of community, youth, and educational programs</p>
+      <div class="give-slider">
+        <nuxt-img src="assets/giveback/calgary-board_logos.webp" width="150" height="150"/>
+        <nuxt-img src="assets/giveback/empowering-minds_logos.webp" width="150" height="150"/>
+        <nuxt-img src="assets/giveback/haskayne_logos.webp" width="150" height="150"/>
+        <nuxt-img src="assets/giveback/jci_logos.webp" width="150" height="150"/>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import VueSlickCarousel from 'vue-slick-carousel'
+export default {
+    components: { VueSlickCarousel },
+    data() {
+      return {
+        giveSettings: {
+          slidesToShow: 4,
+          arrows: false,
+        },
+      }
+    },
+    methods: {
+      showNext() {
+        this.$refs.carousel.next()
+      },
+      showBefore() {
+        this.$refs.carousel.prev()
+      }
+    }
+}
+</script>
+
+<style scoped>
+
+.give-back-bg {
+  background-image: url('/assets/images/give-back-bg.webp');
+  max-width: 63%;
+  margin: 4rem auto;
+  border: 20px solid #ce241e;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.give-back-flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 0rem 3rem;
+}
+
+.give-back-flex h3 {
+  color: #000000;
+  font-family: "Noto Sans",Sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.1em;
+  width: 60%;
+  margin: 0px;
+}
+
+.give-p {
+  color: #232323;
+  font-family: "Noto Sans",Sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.give-right {
+  max-width: 600px;
+  margin: 2rem 0;
+}
+
+.giving-btm {
+  color: #ce241e;
+  font-family: "Noto Sans",Sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.4em;
+  width: 35%;
+}
+</style>
