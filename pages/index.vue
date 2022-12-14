@@ -49,7 +49,7 @@
       <Growmereviews/>
     </section>
     <section class="detail-sec">
-      <Details/>
+      <Details />
     </section>
     <section class="winning-sec">
       <WinningResults/>
@@ -65,6 +65,7 @@
       <GivingBack />
     </section>
   </main>
+  <Footer />
 </div>
 </template>
 

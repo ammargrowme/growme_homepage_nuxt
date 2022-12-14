@@ -13,7 +13,7 @@
     </div>
     <div class="btm-slider">
       <p class="giving-btm">GrowME is a proud sponsor of community, youth, and educational programs</p>
-      <div class="give-slider">
+      <div class="give-img">
         <nuxt-img src="assets/giveback/calgary-board_logos.webp" width="150" height="150"/>
         <nuxt-img src="assets/giveback/empowering-minds_logos.webp" width="150" height="150"/>
         <nuxt-img src="assets/giveback/haskayne_logos.webp" width="150" height="150"/>
@@ -24,25 +24,8 @@
 </template>
 
 <script>
-import VueSlickCarousel from 'vue-slick-carousel'
 export default {
-    components: { VueSlickCarousel },
-    data() {
-      return {
-        giveSettings: {
-          slidesToShow: 4,
-          arrows: false,
-        },
-      }
-    },
-    methods: {
-      showNext() {
-        this.$refs.carousel.next()
-      },
-      showBefore() {
-        this.$refs.carousel.prev()
-      }
-    }
+
 }
 </script>
 
@@ -95,6 +78,24 @@ export default {
   font-size: 25px;
   font-weight: 700;
   line-height: 1.4em;
-  width: 35%;
+  max-width: 350px;
 }
+.give-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.btm-slider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #FFFFFF;
+}
+
+.give-img img {
+  margin: 10px;
+}
+
 </style>
