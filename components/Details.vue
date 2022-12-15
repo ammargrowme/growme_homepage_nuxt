@@ -68,9 +68,7 @@
 </template>
 
 <script>
-import VueSlickCarousel from 'vue-slick-carousel'
 export default {
-    components: { VueSlickCarousel },
     data() {
       return {
         detSettings: {

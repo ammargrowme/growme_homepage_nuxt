@@ -70,7 +70,6 @@
 </template>
 
 <script>
-import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 export default {
   head () {
     return {
