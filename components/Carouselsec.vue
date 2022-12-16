@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="carousel-main">
     <div class="slide-flex">
       <div class="team-slide-box">
         <h3>The Team to Help You Win</h3>
@@ -123,12 +123,12 @@ export default {
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
-  height: 260px;
+  max-height: 260px;
   margin: 4rem auto;
-  width: 1000px;
+  max-width: 1000px;
 }
 
 .sales-machine h3 {
@@ -148,10 +148,6 @@ export default {
   background-color: #FFFFFF;
   border-radius: 100px;
   padding: 15px 50px;
-}
-
-.slick-next:before, .slick-prev:before {
-  font-size: 20px;
 }
 
 .val-flex {
@@ -191,7 +187,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 430px;
+  max-width: 430px;
 }
 
 .val-head {
@@ -250,4 +246,33 @@ export default {
   text-align: center;
 }
 
+@media only screen and (max-width: 724px) {
+  .team-tex {
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 1rem 0px
+  }
+  .carousel-main {
+    max-width: 90%;
+    margin: 0px auto;
+  }
+  .val-slide-box {
+    max-width: 80vw;
+    margin: 0px auto;
+  }
+  .sales-machine {
+    min-height: 600px;
+    padding: 1rem;
+    flex-flow: row wrap;
+  }
+  .val-box img {
+    max-width: 230px;
+  }
+  .val-head {
+    font-size: 30px;
+  }
+  .val-flex .slick-slider {
+    min-width: 320px;
+  }
+}
 </style>

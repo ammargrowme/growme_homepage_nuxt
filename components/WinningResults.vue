@@ -43,7 +43,7 @@ export default {
 
 .winning-box {
   text-align: center;
-  width: 65%;
+  max-width: 65%;
   margin: 0 auto;
 }
 .winning-box h2 {
@@ -51,7 +51,7 @@ export default {
   font-family: "Noto Sans", Sans-serif;
   font-size: 65px;
   font-weight: 800;
-  width: 60%;
+  max-width: 600px;
   margin: 1rem auto;
   border-bottom: 1px solid #D80303;
   line-height: 1;
@@ -63,7 +63,7 @@ export default {
   font-weight: 100;
   text-transform: none;
   line-height: 1.4em;
-  width: 50%;
+  max-width: 500px;
   margin: 1rem auto;
   padding: 1rem;
 }
@@ -81,6 +81,31 @@ export default {
   color: #D80303;
   font-weight: 500;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 1024px) {
+  .winning-box h2 {
+    font-size: 40px;
+  }
+  .winning-box h3 {
+    font-size: 20px;
+  }
+  .winning-box p {
+    font-size: 16px;
+  }
+  .award-box img {
+    width: 120px;
+    height: 120px;
+  }
+  .winning-box {
+    max-width: 90%;
+  }
+  .first-ch {
+    width: 50%;
+  }
+  .sec-ch {
+    width: 50%;
+  }
 }
 
 </style>

@@ -93,6 +93,9 @@ export default {
       },
       'Nanum Myeongjo': {
         wght: [800]
+      },
+      'Lato': {
+        wght: [300, 700]
       }
     }
   }

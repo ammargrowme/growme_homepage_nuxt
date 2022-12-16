@@ -42,7 +42,7 @@ export default {
 
 .give-back-bg {
   background-image: url('/assets/images/give-back-bg.webp');
-  max-width: 63%;
+  max-width: 1100px;
   margin: 4rem auto;
   border: 20px solid #ce241e;
   background-position: center right;
@@ -53,6 +53,7 @@ export default {
 .give-back-flex {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
   align-items: center;
   padding: 0rem 3rem;
 }
@@ -63,7 +64,6 @@ export default {
   font-size: 60px;
   font-weight: 600;
   line-height: 1.1em;
-  width: 60%;
   margin: 0px;
 }
 
@@ -101,10 +101,46 @@ export default {
   align-items: center;
   flex-flow: row wrap;
   background-color: #FFFFFF;
+  padding: 0px 2rem;
 }
 
 .give-img img {
   margin: 10px;
+  width: 130px;
+  height: 130px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .giving-btm {
+    text-align: center;
+    font-size: 20px;
+  }
+  .give-back-flex {
+    justify-content: center;
+    align-items: center;
+  }
+  .give-left h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .give-p {
+    font-size: 18px;
+  }
+  .give-left img {
+    width: 200px;
+    height: 60px;
+    padding: 1rem;
+  }
+  .give-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .give-right {
+    margin-top: 0px;
+  }
+}
 </style>

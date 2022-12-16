@@ -2,7 +2,7 @@
   <header :class="{changeColor: scrollPosition > 50}">
     <nav class="desk-nav">
       <div>
-        <NuxtLink :to="{ path: '/' }"><nuxt-img src="/assets/images/logo_only_white.webp" alt="GrowME Logo" width="180.6" class="main-logo"/></NuxtLink>
+        <NuxtLink :to="{ path: '/' }"><nuxt-img src="/assets/images/logo_only_white.webp" alt="GrowME Logo" width="180.6" height="79.6" class="main-logo"/></NuxtLink>
       </div>
       <div>
         <ul v-show="!mobile" class="menu-li">
@@ -16,7 +16,7 @@
         <a href="tel:+18555476963" class="btn-lin"><fa icon="phone" /></a>
       </div>
       <div class="con-box">
-        <NuxtLink :to="{ path: '/contact-test' }" class="btn-lin"><p class="con-btn">Request Consultation</p></NuxtLink>
+        <NuxtLink :to="{ path: '/' }" class="btn-lin"><p class="con-btn">Request Consultation</p></NuxtLink>
       </div>
       <div @click="toggleMobileNav" v-show="mobile" class="hamburger" :class="{'hamburger open' : mobileNav}">
         <span class="bar"></span>
@@ -106,13 +106,12 @@ export default {
 
 @media screen and (max-width: 1024px) {
   .phone-box svg {
-    font-size: 20px;
+    font-size: 16px;
     color: #e72335;
-    padding: 12px;
+    padding: 8px;
     transition: 300ms;
   }
   .phone-box {
-    margin: 0 1rem 0 auto;
     border: 3px solid #e72335;
     border-radius: 50px;
     transition: 300ms;
@@ -124,10 +123,12 @@ export default {
     color: #FFFFFF;
   }
   .con-btn {
-    width: 115px;
+    width: 83px;
     text-align: center;
     border-radius: 50px !important;
+    font-size: 12px !important;
   }
+
   .desk-nav {
     min-width: 100%;
     height: 100px;
@@ -136,16 +137,14 @@ export default {
     display: block !important;
   }
   .main-logo {
-    width: 140px;
-    height: 62px;
-    margin: 0 0 0 1rem;
+    max-width: 136.61px;
+    max-height: 60.3px;
   }
   .desktop-nav {
     display: none;
   }
   .hamburger {
     display: block;
-    margin: 2rem 2rem 2rem 1rem;
     background-color: #e72335;
     padding: 5px 10px;
   }

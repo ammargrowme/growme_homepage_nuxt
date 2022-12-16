@@ -143,7 +143,7 @@ export default {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: row;
+  flex-flow: row nowrap;
   background-color: #e1e1e1;
   margin-top: 1rem;
   height: 140px;
@@ -165,5 +165,15 @@ export default {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px #919191;
   text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .help-flex {
+    height: 100%;
+    flex-flow: row wrap;
+  }
+  .help-flex-child {
+    width: 100%;
+  }
 }
 </style>

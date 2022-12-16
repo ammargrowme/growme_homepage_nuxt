@@ -199,4 +199,24 @@ export default {
   align-items: center !important;
   pointer-events: none;
 }
+
+@media only screen and (max-width: 1024px) {
+  .detail-box {
+    max-width: 90vw;
+    padding: 0px;
+    margin: 4rem auto;
+  }
+  .detail-slide-flex .slick-slider {
+    min-width: 320px;
+  }
+  .spin {
+    max-width: 280px;
+    max-height: 280px;
+  }
+  .top-pic {
+    max-width: 280px;
+    max-height: 280px;
+  }
+}
+
 </style>

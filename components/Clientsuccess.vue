@@ -258,4 +258,10 @@ export default {
 .success-text {
   margin: 0 0 1.5rem 0;
 }
+
+@media only screen and (max-width: 1024px) {
+  .client-card {
+    width: 100%;
+  }
+}
 </style>

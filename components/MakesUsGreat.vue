@@ -19,6 +19,11 @@
       </div>
     </div>
     <div class="great-flex-child">
+      <div class="fir-box mobile-fir">
+        <nuxt-img class="back-img" src="/assets/images/image_investment-1-peuxl3iegcfifuf2owr39m16s2h0cv1989k5dqvtvs.webp" width="350" height="500" />
+        <h3>Worthwhile Investment</h3>
+        <NuxtLink class="new-mid" :to="{ path: '/contact' }"><p>Stop Paying More for Less</p></NuxtLink>
+      </div>
       <div class="second-tex-box">
         <p>Wondering whether to hire an in-house marketing team or to out-source with us? Your money will always go further with GrowME. Incorporating the diversity and skill offered by large agencies and the specialized, personal approach of a boutique marketing firm, we have perfected the customer experience and discovered a model proven to deliver the best ROI. Pay less for GrowME’s team of experts than for a single in-house marketing employee.</p>
         <h4>Everything You Need</h4>
@@ -28,7 +33,7 @@
           <li>Full Digital Marketing Team (SEO, PPC, Social Media, Advertising)</li>
         </ul>
       </div>
-      <div class="fir-box">
+      <div class="fir-box desktop-fir">
         <nuxt-img class="back-img" src="/assets/images/image_investment-1-peuxl3iegcfifuf2owr39m16s2h0cv1989k5dqvtvs.webp" width="350" height="500" />
         <h3>Worthwhile Investment</h3>
         <NuxtLink class="new-mid" :to="{ path: '/contact' }"><p>Stop Paying More for Less</p></NuxtLink>
@@ -143,5 +148,42 @@ export default {
 .new-mid {
   position: relative;
   text-decoration: none;
+}
+
+.mobile-fir {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .great-flex h2 {
+    font-size: 33px;
+    margin-bottom: 2rem;
+  }
+  .back-img {
+    width: 250px;
+    height: 370px;
+  }
+  .great-flex h3 {
+    font-size: 40px;
+    width: 250px;
+  }
+  .new-mid p {
+    font-size: 14px;
+    padding: 15px 30px;
+  }
+  .fir-box {
+    justify-content: center;
+    align-items: center;
+  }
+  .great-flex-child {
+    max-width: 90%;
+    margin: 0px auto;
+  }
+  .desktop-fir {
+    display: none;
+  }
+  .mobile-fir {
+    display: flex;
+  }
 }
 </style>

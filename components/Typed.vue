@@ -39,4 +39,23 @@ export default {
   font-weight: 800;
   letter-spacing: 10px;
 }
+
+@media (max-width:1024px) {
+  .inline-tex {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 0x;
+  }
+  .cta-tex h2 {
+    font-size: 100px;
+    margin: 2rem 0px;
+    text-align: center;
+  }
+  .cta-tex {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 </style>

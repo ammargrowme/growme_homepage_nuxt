@@ -75,7 +75,7 @@
 
 .industry-blurb {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   background-color: #232323;
   border-radius: 15px;
   margin: 1.5rem;
@@ -99,6 +99,8 @@
   align-items: center;
   margin-top: 3rem;
   background-image: linear-gradient(0deg, rgba(215, 227, 230, 0.9), rgba(215, 227, 230, 0.9)), url("/assets/images/image_logo-designer-1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 .our-clients h3 {
@@ -118,6 +120,21 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8em;
+}
+
+@media only screen and (max-width: 1024px) {
+  .client-p {
+    max-width: 95%;
+  }
+  .our-clients {
+    margin-top: 0px;
+  }
+  .industry-blurb {
+    max-width: 95%;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 </style>

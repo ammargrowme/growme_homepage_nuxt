@@ -140,4 +140,23 @@ export default {
   padding: 0 1rem 0 0;
   margin: 2rem 0 1rem 0;
 }
+
+@media only screen and (max-width: 1024px) {
+  .flex-rev-gog {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+  }
+  .review-head {
+    font-size: 45px;
+  }
+  .temp-box {
+    max-width: 95%;
+  }
+  .review {
+    height: 100%;
+  }
+}
 </style>
