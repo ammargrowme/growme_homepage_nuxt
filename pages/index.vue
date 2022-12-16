@@ -214,8 +214,10 @@ html, body {
 }
 
 .team-sec {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1) 45%), url("/assets/images/image_background.webp");
-  background-size: cover;
+  background-image: url("/assets/images/topography_grey_reverse2.webp");
+  background-position: top center;
+  background-repeat: repeat-x;
+  background-size: contain;
   padding-top: 5rem;
   overflow: hidden;
 }
