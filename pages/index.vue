@@ -82,6 +82,12 @@ export default {
 </script>
 
 <style>
+img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+}
+
 .consult-btn {
   text-decoration: none;
   display: block;

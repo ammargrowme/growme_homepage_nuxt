@@ -1,9 +1,9 @@
 <template>
   <div class="give-back-bg">
     <div class="give-back-flex">
-      <div>
+      <div class="give-left">
         <h3>Giving Back with</h3>
-        <nuxt-img src="assets/images/growmentor-small-letters-dark.webp" width="330" height="100"/>
+        <nuxt-img src="assets/images/growmentor-small-letters-dark.webp" width="280" height="80"/>
       </div>
       <div class="give-right">
         <p class="give-p">When you partner with GrowME for your marketing and website needs, you're helping youth achieve their dreams.</p>
@@ -30,6 +30,15 @@ export default {
 </script>
 
 <style scoped>
+.give-left {
+  max-width: 300px;
+  margin: 0px;
+}
+
+.give-left h3 {
+  margin: 0px;
+  width: 100%;
+}
 
 .give-back-bg {
   background-image: url('/assets/images/give-back-bg.webp');
@@ -68,7 +77,7 @@ export default {
 }
 
 .give-right {
-  max-width: 600px;
+  max-width: 500px;
   margin: 2rem 0;
 }
 
