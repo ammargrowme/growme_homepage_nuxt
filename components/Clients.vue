@@ -135,6 +135,9 @@
     align-items: center;
     justify-content: center;
   }
+  .industry-blurb div {
+    max-width: 40%;
+  }
 }
 
 </style>

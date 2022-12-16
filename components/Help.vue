@@ -131,6 +131,7 @@ export default {
 
 .help-flex-child img {
   max-width: 290px;
+  pointer-events: none;
 }
 
 .help-flex-child p {

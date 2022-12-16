@@ -96,9 +96,9 @@ export default {
 
 .bar {
   display: block;
-  width: 35px;
-  height: 4px;
-  margin: 8px auto;
+  width: 26px;
+  height: 3px;
+  margin: 6px auto;
   border-radius: 15px;
   background-color: #FFFFFF;
   transition: 300ms;
@@ -130,15 +130,15 @@ export default {
   }
 
   .desk-nav {
-    min-width: 100%;
+    min-width: 100vw;
     height: 100px;
   }
   header {
     display: block !important;
   }
   .main-logo {
-    max-width: 136.61px;
-    max-height: 60.3px;
+    max-width: 130px;
+    max-height: 59px;
   }
   .desktop-nav {
     display: none;
@@ -152,10 +152,10 @@ export default {
     opacity: 0;
   }
   .hamburger.open .bar:nth-child(1){
-    transform: translateY(11.5px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
   }
   .hamburger.open .bar:nth-child(3){
-    transform: translateY(-12px) rotate(-45deg);
+    transform: translateY(-8.5px) rotate(-45deg);
   }
   .mobile-nav {
     display: block;

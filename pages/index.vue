@@ -86,6 +86,10 @@ export default {
 </script>
 
 <style>
+html, body {
+  overflow-x: hidden;
+}
+
 .feat-box {
   max-width: 600px;
   margin: 0px auto;
@@ -380,6 +384,12 @@ body {
   }
   .block-tex-rig p {
     font-size: 20px;
+  }
+  .block-tex-lef {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .block-tex-rig {
     padding: 0px 2rem 2rem 2rem;

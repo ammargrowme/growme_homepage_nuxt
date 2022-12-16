@@ -4,14 +4,14 @@
       <div class="team-slide-box">
         <h3>The Team to Help You Win</h3>
         <VueSlickCarousel v-bind="teamSettings">
-          <nuxt-img src="/assets/team/growme_tarek.webp" />
-          <nuxt-img src="/assets/team/growme_sean-ali.webp" />
-          <nuxt-img src="/assets/team/growme_leah.webp" />
-          <nuxt-img src="/assets/team/growme_lauren.webp" />
-          <nuxt-img src="/assets/team/growme_jules.webp" />
-          <nuxt-img src="/assets/team/growme_dulce.webp" />
-          <nuxt-img src="/assets/team/growme_ammar.webp" />
-          <nuxt-img src="/assets/team/growme_abby.webp" />
+          <nuxt-img src="/assets/team/growme_tarek.webp" height="253.5"/>
+          <nuxt-img src="/assets/team/growme_sean-ali.webp" height="253.5"/>
+          <nuxt-img src="/assets/team/growme_leah.webp" height="253.5"/>
+          <nuxt-img src="/assets/team/growme_lauren.webp" height="253.5"/>
+          <nuxt-img src="/assets/team/growme_jules.webp" height="253.5"/>
+          <nuxt-img src="/assets/team/growme_dulce.webp" height="253.5"/>
+          <nuxt-img src="/assets/team/growme_ammar.webp" height="253.5"/>
+          <nuxt-img src="/assets/team/growme_abby.webp" height="253.5"/>
         </VueSlickCarousel>
         <p class="team-tex">Meet the passionate high performance team behind our successful clients GrowME is a team of 30+ in-house marketing experts, artists, designers, developers, writers, creators, managers, and more committed to helping you achieve outstanding results.</p>
         <NuxtLink class="con-btn-md" :to="{ path: '/team' }"><p>Meet The Team</p></NuxtLink>
@@ -272,7 +272,7 @@ export default {
     font-size: 30px;
   }
   .val-flex .slick-slider {
-    min-width: 320px;
+    min-width: 280px;
   }
 }
 </style>

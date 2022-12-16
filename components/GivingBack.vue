@@ -105,9 +105,9 @@ export default {
 }
 
 .give-img img {
-  margin: 10px;
-  width: 130px;
-  height: 130px;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -141,6 +141,9 @@ export default {
   }
   .give-right {
     margin-top: 0px;
+  }
+  .give-back-bg {
+    margin: 4rem auto 0rem auto;
   }
 }
 </style>

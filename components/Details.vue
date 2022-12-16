@@ -73,8 +73,7 @@ export default {
       return {
         detSettings: {
           slidesToShow: 1,
-          autoplay: true,
-          autoplaySpeed: 7000,
+          autoplay: false,
           arrows: false,
         },
       }
@@ -207,15 +206,15 @@ export default {
     margin: 4rem auto;
   }
   .detail-slide-flex .slick-slider {
-    min-width: 320px;
+    min-width: 280px;
   }
   .spin {
-    max-width: 280px;
-    max-height: 280px;
+    max-width: 250px;
+    max-height: 250px;
   }
   .top-pic {
-    max-width: 280px;
-    max-height: 280px;
+    max-width: 250px;
+    max-height: 250px;
   }
 }
 
