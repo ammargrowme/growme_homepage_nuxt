@@ -108,7 +108,7 @@ export default {
   .phone-box svg {
     font-size: 16px;
     color: #e72335;
-    padding: 8px;
+    padding: 8px 9px;
     transition: 300ms;
   }
   .phone-box {
