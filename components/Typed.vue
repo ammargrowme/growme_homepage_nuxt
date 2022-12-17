@@ -40,16 +40,17 @@ export default {
   letter-spacing: 10px;
 }
 
-@media (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
   .inline-tex {
     font-size: 40px;
     text-align: center;
-    margin-left: 0x;
+    margin-left: 0px;
   }
   .cta-tex h2 {
-    font-size: 100px;
+    font-size: 95px;
     margin: 2rem 0px;
     text-align: center;
+    letter-spacing: 3px;
   }
   .cta-tex {
     margin: 1rem auto;
