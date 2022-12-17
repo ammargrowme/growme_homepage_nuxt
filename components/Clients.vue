@@ -3,24 +3,24 @@
       <h3>Our Clients</h3>
       <p class="client-p">We develop lasting partnerships with top brands and businesses who share our values and want results. Those we partner with commend us for the personalized approach and attentive devotion they receive from our team.</p>
       <div class="client-img">
-        <nuxt-img src="assets/images/redline-real-estate_logos-150x150-1.webp" />
-        <nuxt-img src="assets/images/calgaryppf_logos-150x150-1.webp" />
-        <nuxt-img src="assets/images/ruthschris_logos-150x150-1.webp" />
-        <nuxt-img src="assets/images/supreme-security_logos-150x150-2.webp" />
-        <nuxt-img src="assets/images/windowsealwest_logos-150x150-1.webp" />
-        <nuxt-img src="assets/images/unison_logos-150x150-1.webp" />
-        <nuxt-img src="assets/images/our-clients-lakeview-insurance-150x150-1.webp" />
-        <nuxt-img src="assets/images/our-clients-calitso-150x150-1.webp" />
-        <nuxt-img src="assets/images/horizon_logos-150x150-1.webp" />
-        <nuxt-img src="assets/images/our-clients-airdrie-confidental-150x150-1.webp" />
-        <nuxt-img src="assets/images/our-client-pharmasave-150x150-1.webp" />
-        <nuxt-img src="assets/images/cdn_logos-01-150x150-1.webp" />
-        <nuxt-img src="assets/images/our-clients-cangas-150x150-1.webp" />
-        <nuxt-img src="assets/images/our-clients-picknpull-150x150-1.webp" />
-        <nuxt-img src="assets/images/our-clients-ultimate-renovations-150x150-1.webp" />
-        <nuxt-img src="assets/images/our-clients-hubbard-exteriors-150x150-1.webp" />
-        <nuxt-img src="assets/images/our-clients-xact-150x150-1.webp" />
-        <nuxt-img src="assets/images/our-clients-tf-energy-solutions-150x150-1.webp" />
+        <nuxt-img src="assets/images/redline-real-estate_logos-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/calgaryppf_logos-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/ruthschris_logos-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/supreme-security_logos-150x150-2.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/windowsealwest_logos-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/unison_logos-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/our-clients-lakeview-insurance-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/our-clients-calitso-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/horizon_logos-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/our-clients-airdrie-confidental-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/our-client-pharmasave-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/cdn_logos-01-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/our-clients-cangas-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/our-clients-picknpull-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/our-clients-ultimate-renovations-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/our-clients-hubbard-exteriors-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/our-clients-xact-150x150-1.webp" loading="lazy"/>
+        <nuxt-img src="assets/images/our-clients-tf-energy-solutions-150x150-1.webp" loading="lazy"/>
       </div>
       <div class="industry-blurb">
         <div>

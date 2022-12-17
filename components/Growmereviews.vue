@@ -3,7 +3,7 @@
     <div class="flex-rev-gog">
       <h2 class="review-head">What Clients Are Saying About GrowME</h2>
       <div class="google-logo-box">
-        <nuxt-img src="assets/images/google_review_logo.webp" width="140" />
+        <nuxt-img src="assets/images/google_review_logo.webp" width="140" loading="lazy"/>
         <div class="starbox rev-star">
           <fa icon="star"/>
           <fa icon="star"/>

@@ -3,7 +3,7 @@
     <h2 class="to-up help-h2">How Can We Help?</h2>
         <div class="help-flex">
           <div @mouseover="showBox = true" @mouseleave="showBox = false" class="help-flex-child">
-            <nuxt-img src="assets/images/image_lead-generation-1.webp"/>
+            <nuxt-img src="assets/images/image_lead-generation-1.webp" loading="lazy"/>
             <p>Lead Generation &amp; Marketing</p>
             <Transition name="fade">
               <div class="help-hover-box" v-if="showBox">
@@ -15,7 +15,7 @@
             </Transition>
           </div>
           <div @mouseover="showBox2 = true" @mouseleave="showBox2 = false" class="help-flex-child">
-            <nuxt-img src="assets/images/image_search-engine-optimization.webp"/>
+            <nuxt-img src="assets/images/image_search-engine-optimization.webp" loading="lazy"/>
             <p>Search Engine Optimization</p>
             <Transition name="fade">
               <div class="help-hover-box" v-if="showBox2">
@@ -27,7 +27,7 @@
             </Transition>
           </div>
           <div @mouseover="showBox3 = true" @mouseleave="showBox3 = false" class="help-flex-child">
-            <nuxt-img src="assets/images/image_branding-identity-1.webp"/>
+            <nuxt-img src="assets/images/image_branding-identity-1.webp" loading="lazy"/>
             <p>Branding &amp; Strategy</p>
             <Transition name="fade">
               <div class="help-hover-box" v-if="showBox3">
@@ -39,7 +39,7 @@
             </Transition>
           </div>
           <div @mouseover="showBox4 = true" @mouseleave="showBox4 = false" class="help-flex-child">
-            <nuxt-img src="assets/images/image_web-design-1.webp"/>
+            <nuxt-img src="assets/images/image_web-design-1.webp" loading="lazy"/>
             <p>Website Design &amp; Creative</p>
             <Transition name="fade">
               <div class="help-hover-box" v-if="showBox4">

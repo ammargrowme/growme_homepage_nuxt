@@ -4,15 +4,15 @@
     <h3>Our leading marketing agency is meeting the needs of modern businesses</h3>
     <p>You don’t just need a marketing company, you need the best marketing and <a href="/">branding agency</a> that can handle the needs of your modern business. We turn traffic into clients and clicks into customers. All aspects of our digital marketing strategy conjoin and combine to create a process that’s proven to launch your company towards next-level results. GrowME’s formula for success is interwoven into the framework of our business, and your company’s growth is at the centre of everything we do.</p>
     <div class="award-box">
-      <div class="first-ch"><nuxt-img src="/assets/awards/Google-partner.webp" width="150" height="150"/></div>
-      <div class="first-ch"><nuxt-img src="/assets/awards/image_growme-google-ads-1.webp" width="150" height="150"/></div>
-      <div class="first-ch"><nuxt-img src="/assets/awards/image_growme-google-analytics.webp" width="150" height="150"/></div>
-      <div class="first-ch"><nuxt-img src="/assets/awards/image_semrush.webp" width="150" height="150"/></div>
-      <div class="sec-ch"><nuxt-img src="/assets/awards/image_three-best-2018.webp" width="150" height="150"/></div>
-      <div class="sec-ch"><nuxt-img src="/assets/awards/image_three-best-2021.webp" width="150" height="150"/></div>
-      <div class="sec-ch"><nuxt-img src="/assets/awards/image_three-best-2022-01.webp" width="150" height="150"/></div>
-      <div class="sec-ch"><nuxt-img src="/assets/awards/image_growme-certified-professional-hootsuite.webp" width="150" height="150"/></div>
-      <div class="sec-ch"><nuxt-img src="/assets/awards/image_forbes.webp" width="150" height="150"/></div>
+      <div class="first-ch"><nuxt-img src="/assets/awards/Google-partner.webp" width="150" height="150" loading="lazy"/></div>
+      <div class="first-ch"><nuxt-img src="/assets/awards/image_growme-google-ads-1.webp" width="150" height="150" loading="lazy"/></div>
+      <div class="first-ch"><nuxt-img src="/assets/awards/image_growme-google-analytics.webp" width="150" height="150" loading="lazy"/></div>
+      <div class="first-ch"><nuxt-img src="/assets/awards/image_semrush.webp" width="150" height="150" loading="lazy"/></div>
+      <div class="sec-ch"><nuxt-img src="/assets/awards/image_three-best-2018.webp" width="150" height="150" loading="lazy"/></div>
+      <div class="sec-ch"><nuxt-img src="/assets/awards/image_three-best-2021.webp" width="150" height="150" loading="lazy"/></div>
+      <div class="sec-ch"><nuxt-img src="/assets/awards/image_three-best-2022-01.webp" width="150" height="150" loading="lazy"/></div>
+      <div class="sec-ch"><nuxt-img src="/assets/awards/image_growme-certified-professional-hootsuite.webp" width="150" height="150" loading="lazy"/></div>
+      <div class="sec-ch"><nuxt-img src="/assets/awards/image_forbes.webp" width="150" height="150" loading="lazy"/></div>
     </div>
   </div>
 </template>

@@ -4,14 +4,14 @@
       <div class="team-slide-box">
         <h3>The Team to Help You Win</h3>
         <VueSlickCarousel v-bind="teamSettings">
-          <nuxt-img src="/assets/team/growme_tarek.webp" height="253.5"/>
-          <nuxt-img src="/assets/team/growme_sean-ali.webp" height="253.5"/>
-          <nuxt-img src="/assets/team/growme_leah.webp" height="253.5"/>
-          <nuxt-img src="/assets/team/growme_lauren.webp" height="253.5"/>
-          <nuxt-img src="/assets/team/growme_jules.webp" height="253.5"/>
-          <nuxt-img src="/assets/team/growme_dulce.webp" height="253.5"/>
-          <nuxt-img src="/assets/team/growme_ammar.webp" height="253.5"/>
-          <nuxt-img src="/assets/team/growme_abby.webp" height="253.5"/>
+          <nuxt-img src="/assets/team/growme_tarek.webp" height="253.5" loading="lazy"/>
+          <nuxt-img src="/assets/team/growme_sean-ali.webp" height="253.5" loading="lazy"/>
+          <nuxt-img src="/assets/team/growme_leah.webp" height="253.5" loading="lazy"/>
+          <nuxt-img src="/assets/team/growme_lauren.webp" height="253.5" loading="lazy"/>
+          <nuxt-img src="/assets/team/growme_jules.webp" height="253.5" loading="lazy"/>
+          <nuxt-img src="/assets/team/growme_dulce.webp" height="253.5" loading="lazy"/>
+          <nuxt-img src="/assets/team/growme_ammar.webp" height="253.5" loading="lazy"/>
+          <nuxt-img src="/assets/team/growme_abby.webp" height="253.5" loading="lazy"/>
         </VueSlickCarousel>
         <p class="team-tex">Meet the passionate high performance team behind our successful clients GrowME is a team of 30+ in-house marketing experts, artists, designers, developers, writers, creators, managers, and more committed to helping you achieve outstanding results.</p>
         <NuxtLink class="con-btn-md" :to="{ path: '/team' }"><p>Meet The Team</p></NuxtLink>
@@ -23,7 +23,7 @@
           <VueSlickCarousel v-bind="valSettings" ref="carouselVal">
             <div class="val-box">
               <p class="val-head">Good Vibes Only</p>
-              <nuxt-img src="/assets/team/image_values-01.webp" width="300" />
+              <nuxt-img src="/assets/team/image_values-01.webp" width="300" loading="lazy"/>
               <p class="bot-val-tex">
                 Our team is made up of people with positive can-do attitudes who want to help our clients grow.
                 We help each other. We treat each other the way we want to be treated, and our happiness cultivates
@@ -32,7 +32,7 @@
             </div>
             <div class="val-box">
               <p class="val-head">Push It to The Limit</p>
-              <nuxt-img src="/assets/team/image_values-02.webp" width="300" />
+              <nuxt-img src="/assets/team/image_values-02.webp" width="300" loading="lazy"/>
               <p class="bot-val-tex">
                 We always deliver the most value we can for our clients and are always improving.
                 Performance and boldness run in the veins of our team and the best is what we strive to be.
@@ -40,7 +40,7 @@
             </div>
             <div class="val-box">
               <p class="val-head">Keepin' It Real</p>
-              <nuxt-img src="/assets/team/image_values-03.webp" width="300" />
+              <nuxt-img src="/assets/team/image_values-03.webp" width="300" loading="lazy"/>
               <p class="bot-val-tex">
                 Integrity and respect are at the core of our family. Our reputation forms GrowME’s reputation
                 and we are committed to honesty, transparency and authenticity. We say what we mean and deliver it.
@@ -57,7 +57,7 @@
         <p>FIND OUT MORE ON FORBES</p>
       </div>
       <div class="machine-img">
-        <nuxt-img src="/assets/images/copywrighter.webp" />
+        <nuxt-img src="/assets/images/copywrighter.webp" loading="lazy"/>
       </div>
     </div>
   </div>

@@ -3,7 +3,7 @@
     <div class="give-back-flex">
       <div class="give-left">
         <h3>Giving Back with</h3>
-        <nuxt-img src="assets/images/growmentor-small-letters-dark.webp" width="280" height="80"/>
+        <nuxt-img src="assets/images/growmentor-small-letters-dark.webp" width="280" height="80" loading="lazy"/>
       </div>
       <div class="give-right">
         <p class="give-p">When you partner with GrowME for your marketing and website needs, you're helping youth achieve their dreams.</p>
@@ -14,10 +14,10 @@
     <div class="btm-slider">
       <p class="giving-btm">GrowME is a proud sponsor of community, youth, and educational programs</p>
       <div class="give-img">
-        <nuxt-img src="assets/giveback/calgary-board_logos.webp" width="150" height="150"/>
-        <nuxt-img src="assets/giveback/empowering-minds_logos.webp" width="150" height="150"/>
-        <nuxt-img src="assets/giveback/haskayne_logos.webp" width="150" height="150"/>
-        <nuxt-img src="assets/giveback/jci_logos.webp" width="150" height="150"/>
+        <nuxt-img src="assets/giveback/calgary-board_logos.webp" width="150" height="150" loading="lazy"/>
+        <nuxt-img src="assets/giveback/empowering-minds_logos.webp" width="150" height="150" loading="lazy"/>
+        <nuxt-img src="assets/giveback/haskayne_logos.webp" width="150" height="150" loading="lazy"/>
+        <nuxt-img src="assets/giveback/jci_logos.webp" width="150" height="150" loading="lazy"/>
       </div>
     </div>
   </div>

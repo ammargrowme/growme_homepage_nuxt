@@ -3,7 +3,7 @@
     <h2>What Makes Us Great</h2>
     <div class="great-flex-child">
       <div class="fir-box">
-        <nuxt-img class="back-img" src="/assets/images/image_happy-handshake-peuxiwjyi9ffcllrhymfg5ygvpa6eabsxerd2i4weg.webp" width="350" height="500" />
+        <nuxt-img class="back-img" src="/assets/images/image_happy-handshake-peuxiwjyi9ffcllrhymfg5ygvpa6eabsxerd2i4weg.webp" width="350" height="500" loading="lazy"/>
         <h3>Every Client Stays Happy</h3>
         <NuxtLink class="new-mid" :to="{ path: '/contact' }"><p>Check Out Our Work</p></NuxtLink>
       </div>
@@ -20,7 +20,7 @@
     </div>
     <div class="great-flex-child">
       <div class="fir-box mobile-fir">
-        <nuxt-img class="back-img" src="/assets/images/image_investment-1-peuxl3iegcfifuf2owr39m16s2h0cv1989k5dqvtvs.webp" width="350" height="500" />
+        <nuxt-img class="back-img" src="/assets/images/image_investment-1-peuxl3iegcfifuf2owr39m16s2h0cv1989k5dqvtvs.webp" width="350" height="500" loading="lazy"/>
         <h3>Worthwhile Investment</h3>
         <NuxtLink class="new-mid" :to="{ path: '/contact' }"><p>Stop Paying More for Less</p></NuxtLink>
       </div>
@@ -34,14 +34,14 @@
         </ul>
       </div>
       <div class="fir-box desktop-fir">
-        <nuxt-img class="back-img" src="/assets/images/image_investment-1-peuxl3iegcfifuf2owr39m16s2h0cv1989k5dqvtvs.webp" width="350" height="500" />
+        <nuxt-img class="back-img" src="/assets/images/image_investment-1-peuxl3iegcfifuf2owr39m16s2h0cv1989k5dqvtvs.webp" width="350" height="500" loading="lazy"/>
         <h3>Worthwhile Investment</h3>
         <NuxtLink class="new-mid" :to="{ path: '/contact' }"><p>Stop Paying More for Less</p></NuxtLink>
       </div>
     </div>
     <div class="great-flex-child">
       <div class="fir-box">
-        <nuxt-img class="back-img" src="/assets/images/image_passion-commitment-peuxnx0yygah9qbm84msqweyxokng689m80l7mpb7s.webp" width="350" height="500" />
+        <nuxt-img class="back-img" src="/assets/images/image_passion-commitment-peuxnx0yygah9qbm84msqweyxokng689m80l7mpb7s.webp" width="350" height="500" loading="lazy"/>
         <h3>Passion &amp; Commitment</h3>
         <NuxtLink class="new-mid" :to="{ path: '/contact' }"><p>Get to Know Our Awesome Team</p></NuxtLink>
       </div>

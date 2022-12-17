@@ -2,7 +2,7 @@
   <header :class="{changeColor: scrollPosition > 50}">
     <nav class="desk-nav">
       <div>
-        <NuxtLink :to="{ path: '/' }"><nuxt-img src="/assets/images/logo_only_white.webp" alt="GrowME Logo" width="180.6" height="79.6" class="main-logo"/></NuxtLink>
+        <NuxtLink :to="{ path: '/' }"><nuxt-img src="/assets/images/logo_only_white.webp" alt="GrowME Logo" width="180.6" height="79.6" class="main-logo" loading="lazy"/></NuxtLink>
       </div>
       <div>
         <ul v-show="!mobile" class="menu-li">

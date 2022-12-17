@@ -2,7 +2,7 @@
   <footer>
     <div class="footer-direct">
       <div class="first-box">
-        <NuxtLink :to="{ path: '/' }"><nuxt-img src="/assets/images/logo_only_white.webp" width="180.6" height="79.6"/></NuxtLink>
+        <NuxtLink :to="{ path: '/' }"><nuxt-img src="/assets/images/logo_only_white.webp" width="180.6" height="79.6" loading="lazy"/></NuxtLink>
         <a href="tel:1231231234"><p>(855) 5-GrowME</p></a>
         <a href="tel:1231231234"><p>(855) 547-6963</p></a>
       </div>

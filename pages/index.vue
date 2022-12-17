@@ -12,7 +12,7 @@
           <p>Founded amid one of the largest economic downturns in the last 50 years, we know how to help clients prosper and excel during good and hard times. We can unlock the growth you’ve always wanted. Because we’ve done it ourselves.</p>
         </div>
         <div class="block-tex-lef">
-          <nuxt-img class="team-bg" src="assets/images/growme_team-new-800px.webp" width="418" height="278.48"/>
+          <nuxt-img class="team-bg" src="assets/images/growme_team-new-800px.webp" width="418" height="278.48" loading="lazy"/>
           <p>Powered by a team of industry virtuosos, we offer more than any in-house employee ever could and more than other marketing agencies ever will. With expertise in brand development, customer acquisition, digital marketing and website development, we are fully stacked to deliver on your marketing goals.</p>
         </div>
       </div>
@@ -30,9 +30,9 @@
         <div class="feat-box">
           <p class="feature-text">Featured In:</p>
           <div class="feat-sec">
-            <nuxt-img src="assets/images/featured-in-forbes.webp" width="163" />
-            <nuxt-img src="assets/images/featured-in-haskayne.webp" width="163" />
-            <nuxt-img src="assets/images/featured-in-upcity.webp" width="163" />
+            <nuxt-img src="assets/images/featured-in-forbes.webp" width="163" loading="lazy"/>
+            <nuxt-img src="assets/images/featured-in-haskayne.webp" width="163" loading="lazy"/>
+            <nuxt-img src="assets/images/featured-in-upcity.webp" width="163" loading="lazy"/>
           </div>
         </div>
       </div>

@@ -7,9 +7,9 @@
       <VueSlickCarousel v-bind="detSettings" ref="carousel">
         <div>
           <div class="car-box">
-            <nuxt-img class="spin" src="/assets/details/background-texture.webp" width="320" height="320"/>
+            <nuxt-img class="spin" src="/assets/details/background-texture.webp" width="320" height="320" loading="lazy"/>
             <p class="det-num">1</p>
-            <nuxt-img class="top-pic" width="392" height="392" src="/assets/details/image_process-discovery-partnership.webp"/>
+            <nuxt-img class="top-pic" width="392" height="392" src="/assets/details/image_process-discovery-partnership.webp" loading="lazy"/>
           </div>
           <div class="car-text">
             <p>Discovery &amp; Partnership</p>
@@ -18,9 +18,9 @@
         </div>
         <div>
           <div class="car-box">
-            <nuxt-img class="spin" src="/assets/details/background-texture.webp" width="320" height="320"/>
+            <nuxt-img class="spin" src="/assets/details/background-texture.webp" width="320" height="320" loading="lazy"/>
             <p class="det-num">2</p>
-            <nuxt-img class="top-pic" width="392" height="392" src="/assets/details/image_process-research-analysis.webp"/>
+            <nuxt-img class="top-pic" width="392" height="392" src="/assets/details/image_process-research-analysis.webp" loading="lazy"/>
           </div>
           <div class="car-text">
             <p>Research &amp; Analysis</p>
@@ -29,9 +29,9 @@
         </div>
         <div>
           <div class="car-box">
-            <nuxt-img class="spin" src="/assets/details/background-texture.webp" width="320" height="320"/>
+            <nuxt-img class="spin" src="/assets/details/background-texture.webp" width="320" height="320" loading="lazy"/>
             <p class="det-num">3</p>
-            <nuxt-img class="top-pic" width="392" height="392" src="/assets/details/image_process-branding-strategy.webp"/>
+            <nuxt-img class="top-pic" width="392" height="392" src="/assets/details/image_process-branding-strategy.webp" loading="lazy"/>
           </div>
           <div class="car-text">
             <p>Branding &amp; Strategy</p>
@@ -40,9 +40,9 @@
         </div>
         <div>
           <div class="car-box">
-            <nuxt-img class="spin" src="/assets/details/background-texture.webp" width="320" height="320"/>
+            <nuxt-img class="spin" src="/assets/details/background-texture.webp" width="320" height="320" loading="lazy"/>
             <p class="det-num">4</p>
-            <nuxt-img class="top-pic" width="392" height="392" src="/assets/details/image_process-launch.webp"/>
+            <nuxt-img class="top-pic" width="392" height="392" src="/assets/details/image_process-launch.webp" loading="lazy"/>
           </div>
           <div class="car-text">
             <p>Launch Your Campaign</p>
@@ -51,9 +51,9 @@
         </div>
         <div>
           <div class="car-box">
-            <nuxt-img class="spin" src="/assets/details/background-texture-arrow2.webp" width="320" height="320"/>
+            <nuxt-img class="spin" src="/assets/details/background-texture-arrow2.webp" width="320" height="320" loading="lazy"/>
             <p class="det-num">5</p>
-            <nuxt-img class="top-pic" width="392" height="392" src="/assets/details/image_process-evaluate-optimize-1.webp"/>
+            <nuxt-img class="top-pic" width="392" height="392" src="/assets/details/image_process-evaluate-optimize-1.webp" loading="lazy"/>
           </div>
           <div class="car-text">
             <p>Evaluate &amp; Optimize</p>
