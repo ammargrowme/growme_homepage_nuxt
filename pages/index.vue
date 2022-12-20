@@ -47,13 +47,13 @@
       <Clientsuccess/>
     </section>
     <section class="team-sec">
-      <Carouselsec/>
+      <LazyCarouselsec/>
     </section>
     <section class="review-sec">
       <Growmereviews/>
     </section>
     <section class="detail-sec">
-      <Details />
+      <LazyDetails />
     </section>
     <section class="winning-sec">
       <WinningResults/>
