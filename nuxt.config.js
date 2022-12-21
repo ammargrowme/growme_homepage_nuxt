@@ -77,6 +77,7 @@ export default {
   googleFonts: {
     download: true,
     preload: true,
+    display: 'swap',
     families: {
       'Noto Sans': {
         wght: [100, 400, 600, 700, 800]
