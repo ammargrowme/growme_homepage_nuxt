@@ -69,12 +69,14 @@ export default {
   modules: [
   ],
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
+  // Build Configuration: https://go.nuxtjs.dev/config-builds
   build: {
   },
 
   // Google Fonts
   googleFonts: {
+    download: true,
+    preload: true,
     families: {
       'Noto Sans': {
         wght: [100, 400, 600, 700, 800]
