@@ -8,12 +8,6 @@
   </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style scoped>
 .inline-tex {
   display: flex;

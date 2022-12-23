@@ -59,12 +59,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  
-}
-</script>
-
 <style scoped>
 .great-flex-child {
   display: flex;

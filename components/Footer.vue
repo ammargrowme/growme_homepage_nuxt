@@ -66,10 +66,6 @@
   </footer>
 </template>
 
-<script>
-
-</script>
-
 <style>
 footer {
   background-color: #232323;

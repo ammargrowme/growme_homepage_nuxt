@@ -23,12 +23,6 @@
   </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style scoped>
 .give-left {
   max-width: 300px;
