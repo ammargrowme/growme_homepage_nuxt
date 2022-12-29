@@ -8,6 +8,9 @@
 * Minimize embeds (Is there an API for this instead?)
 * Load individual assets, never load a complete library (Fontawesome and Google fonts for example)
 
+### Live site
+[Here!](https://nuxt.growmeconsulting.ca/)
+
 ### install dependencies
 $ npm install
 
